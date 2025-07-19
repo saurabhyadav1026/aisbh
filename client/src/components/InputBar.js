@@ -1,8 +1,6 @@
 
 import {Add_attachment_icon,Send_icon} from './icons';
 
-import {sendCammand } from "../server"
-import { useState } from 'react';
 
 
 
@@ -39,8 +37,8 @@ const InputBar = (props) => {
 
             <div id="text_input_bar">
                 {/* <!-- add attachment btn --> */}
-               {/*  <div id="add_file_btn"><Add_attachment_icon></Add_attachment_icon></div>
- */}
+              <div id="add_file_btn"><Add_attachment_icon></Add_attachment_icon></div>
+
                 {/*  intput area  */}
                 <input id="cammand_input" onKeyDown={(e)=>{if(!e.shiftKey&&e.key==='Enter')send()}} placeholder="Enter here.."/> 
 

@@ -1,7 +1,7 @@
-import{useState} from 'react';
+
 import { History_icon, Clean_history_icon } from '../../icons';
 
-import { createChat,chatOn } from '../../../server'
+
 
 import HistoryList from './HistoryList'
 
@@ -41,7 +41,7 @@ export const clearHistory = () => {
 
     history_list_bar.innerHTML = "";
 
-    createChat();
+ // createChat();
 }
 
 

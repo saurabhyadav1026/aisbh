@@ -1,7 +1,5 @@
 
 
-import {copyRes,likeRes,dislikeRes,regenrateRes} from '../server'
-
 import {Dislike,Copy,LikeRes,RegenerateBtn} from './icons'
 /* 
 props 
@@ -24,17 +22,17 @@ const resShow=(props)=>{
                 <div className="res_option">
 
                    {/*  <!--  copy btn --> */}
-                    <span><Copy func={copyRes} chat_no={props.chat_no} r_no={props.r_no}></Copy></span>
+                    <span><Copy func={"copyRes"} chat_no={props.chat_no} r_no={props.r_no}></Copy></span>
 
                   {/*       <!--  like btn --> */}
-                    <span><LikeRes func={likeRes} chat_no={props.chat_no} r_no={props.r_no}></LikeRes></span>
+                    <span><LikeRes func={"likeRes"} chat_no={props.chat_no} r_no={props.r_no}></LikeRes></span>
 
                      {/*    <!-- dislike btn --> */}
-                    <span><Dislike func={dislikeRes} chat_no={props.chat_no} r_no={props.r_no} ></Dislike></span>
+                    <span><Dislike func={"dislikeRes"} chat_no={props.chat_no} r_no={props.r_no} ></Dislike></span>
 
 
                       {/*   <!-- regenerate btn --> */}
-                    <span><RegenerateBtn func={regenrateRes} chat_no={props.chat_no} r_no={props.r_no}></RegenerateBtn></span>
+                    <span><RegenerateBtn func={"regenrateRes"} chat_no={props.chat_no} r_no={props.r_no}></RegenerateBtn></span>
 
                 </div>
 
