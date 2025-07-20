@@ -37,6 +37,7 @@ const InputBar = (props) => {
 
         if((!e.shiftKey)&&(e.key==='Enter'))send();
         if(((e.shiftKey)&&(e.key==='n'))||((e.shiftKey)&&(e.key==='N'))){
+            document.getElementById("cammand_input").value="";
             props.createNewChat();
         
         }
@@ -54,7 +55,7 @@ const InputBar = (props) => {
               <div id="add_file_btn"><AddAttachmentIcon></AddAttachmentIcon></div>
 
                 {/*  intput area  */}
-                <input id="cammand_input" onKeyDown={(key)=>{keyFunctions(key)}} placeholder="Enter here.."/> 
+                <input id="cammand_input" onKeyUp={(key)=>{keyFunctions(key)}} placeholder="Enter here.."/> 
 
 
                 {/* <!-- send btn --> */}

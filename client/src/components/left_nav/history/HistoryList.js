@@ -1,7 +1,7 @@
 
 
 
-
+import React from "react"
 
 export const HistoryList = (props) => {
 
@@ -9,7 +9,9 @@ export const HistoryList = (props) => {
 
         {
             props.chats.map((chat,i) => {
-               return <div onClick={() => {props.setActiveChat(i)}}>Chat {i} </div>
+               return    <React.Fragment key={i}>
+               <div onClick={() => {props.setActiveChat(i)}}>{chat.id} </div>
+               </React.Fragment>
             }
             )
 

@@ -9,61 +9,64 @@ import getRes from "./getRes";
 export const App = () => {
 
 
-       // set old chats at usestate intilization
-const old_chat=[]
-   try{
+  // set old chats at usestate intilization
+  const old_chat = []
+  try {
 
-  const temp=localStorage.getItem("sbh_chats")
-  
-       JSON.parse(temp).forEach(c => {
-        old_chat.push(c)
-       });
-       
-        }
-  catch(e){
-    old_chat.push({id:"ch_"+old_chat.length ,reqs:[],ress:[]})
-   
-      // if there is no any local storage chat
- }
+    const temp = localStorage.getItem("sbh_chats")
+
+    JSON.parse(temp).forEach(c => {
+      old_chat.push(c)
+    });
 
 
-  const [chats, setChats] = useState(old_chat); 
-  const [active_chat, setActiveChat] = useState(chats.length); 
- 
+  }
+  catch (e) {
 
-  
+
+    // if there is no any local storage chat
+  }
+
+
+  const [chats, setChats] = useState(old_chat);
+  const [active_chat, setActiveChat] = useState(chats.length);
+
+
+
 
   const createNewChat = () => {
-   
-  if(chats[chats.length-1].reqs.length===0)return;
-      setActiveChat([...chats].length)   
-     
-      }
+
+    if (chats[chats.length - 1].reqs.length === 0) return;
+    setActiveChat([...chats].length)
+
+  }
 
 
 
   // to add req and res in the chats list
   const setReqRes = (req, reqk) => {
- 
-   let temp_chat =[...chats];
-if(chats.length===active_chat) temp_chat.push({id:"ch_"+chats.length,reqs:[],ress:[]});
+
+    let temp_chats = [...chats];
+    if (chats.length === active_chat) temp_chats.push({ id: "ch_" + chats.length, reqs: [], ress: [] });
+
+    temp_chats[active_chat].reqs.push(req);
+    temp_chats[active_chat].ress.push(getRes(reqk));
 
 
-    temp_chat[active_chat].reqs.push(req);   
-    temp_chat[active_chat].ress.push(getRes(reqk));
-  
-    setChats(temp_chat);
+    setChats(temp_chats);
 
-    localStorage.setItem("sbh_chats",JSON.stringify(chats));
-    console.log(chats)
-  
+    localStorage.setItem("sbh_chats", JSON.stringify(temp_chats));
+
+
+
+
   }
 
 
-// to clear the chats
+  // to clear the chatsx
   const clearChats = () => {
-     setChats([{ reqs: [], ress: [] }])
-     localStorage.clear()
+    setChats([])
+    localStorage.clear();
     setActiveChat(0);
   }
 
