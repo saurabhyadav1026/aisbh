@@ -1,11 +1,11 @@
 
-import {Bot_icon}  from '../../icons';
+import {BotIcon}  from '../../icons';
 const Logo=()=>{
 return(
     <>
 <div id="logo_bar" className="left_bar">
     <div className="left_nav_icons">
-        <div id="logo_icon"><Bot_icon></Bot_icon></div>
+        <div id="logo_icon"><BotIcon></BotIcon></div>
         <div></div>
     </div>
     <div className="left_nav_bar">

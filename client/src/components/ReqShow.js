@@ -27,10 +27,10 @@ const ReqShow=(props)=>{
                         <div className="req_option">
     
                         {/*     <!--  edit btn--> */}
-                            <span> <Edit func={"editReq"} chat_no={props.chat_no} r_no={props.r_no} ></Edit></span>
+                            <span> <Edit func={"editReq"}  r_no={props.r_no} ></Edit></span>
     
                                {/*  <!--  copy btn --> */}
-                            <span><Copy func={"copyReq"} chat_no={props.chat_no} r_no={props.r_no}></Copy></span>
+                            <span><Copy func={"copyReq"}  r_no={props.r_no}></Copy></span>
                         </div>
     
                     </div>

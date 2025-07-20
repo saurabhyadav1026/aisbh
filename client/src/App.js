@@ -1,88 +1,86 @@
-import {  useState } from "react";
+import { useState } from "react";
 
-import Top_nav from "./components/Top_nav";
-import Left_nav from './components/left_nav/LeftNav';
+import TopNav from "./components/TopNav";
+import LeftNav from './components/left_nav/LeftNav';
 import ChatPage from './components/ChatPage';
 import InputBar from './components/InputBar';
 import getRes from "./getRes";
 
-export const App=()=> {
+export const App = () => {
+
+
+       // set old chats at usestate intilization
+const old_chat=[]
+   try{
+
+  const temp=localStorage.getItem("sbh_chats")
   
-  
-const [active_chat,setActiveChat]=useState(0);
-const [chat_count,set_chat_count]=useState();
-const [r,setr]=useState(-1)
+       JSON.parse(temp).forEach(c => {
+        old_chat.push(c)
+       });
+       
+        }
+  catch(e){
+    old_chat.push({id:"ch_"+old_chat.length ,reqs:[],ress:[]})
+   
+      // if there is no any local storage chat
+ }
 
-const [req_,editReq]=useState([])
 
-
-const [res_,editRes]=useState([]);
-  
-const addReq=(req)=>{
-editReq([...req_, req])
-
-}
-const addRes=(res)=>{
-  editRes([...res_, res])
-  
-  }
-
-  
-const setReq=(req,reqk)=>{
-  setr(r+1)
-
-  addReq(req)
-  addRes(getRes(reqk))
- addChat()
-  sstest()
-  }
+  const [chats, setChats] = useState(old_chat); 
+  const [active_chat, setActiveChat] = useState(chats.length); 
  
 
-      //    {reqs:[1,2],ress:[2,3]}
+  
 
-  const [chats,setChats]=useState([{reqs:[1,2],ress:[2,3]}])
+  const createNewChat = () => {
+   
+  if(chats[chats.length-1].reqs.length===0)return;
+      setActiveChat([...chats].length)   
+     
+      }
 
-console.log(chats)
 
 
-// to create new chat
-const addChat=()=>{ 
-  setChats([...chats,{reqs:[],ress:[]}])
+  // to add req and res in the chats list
+  const setReqRes = (req, reqk) => {
+ 
+   let temp_chat =[...chats];
+if(chats.length===active_chat) temp_chat.push({id:"ch_"+chats.length,reqs:[],ress:[]});
+
+
+    temp_chat[active_chat].reqs.push(req);   
+    temp_chat[active_chat].ress.push(getRes(reqk));
+  
+    setChats(temp_chat);
+
+    localStorage.setItem("sbh_chats",JSON.stringify(chats));
+    console.log(chats)
   
   }
-  
 
 
-  // testing to add new req and res in chat
-const sstest=()=>{
- 
-let p=0;
-const old_chats=[...chats];
-old_chats[0].ress.push(8)
-setChats(old_chats)
+// to clear the chats
+  const clearChats = () => {
+     setChats([{ reqs: [], ress: [] }])
+     localStorage.clear()
+    setActiveChat(0);
+  }
 
 
-console.log(chats)
-console.log(chats.length)
-
-}
-  
-
-  
-  
   return (
-    
-    <>
-    <Left_nav chat_count={chat_count} setActiveChat={setActiveChat}></Left_nav>
-      <div id="main_page">
-        <Top_nav></Top_nav>
-        <ChatPage active_chat={active_chat} r={r} res_={res_} req_={req_}></ChatPage>
 
-        <InputBar active_chat={active_chat} setReq={setReq} ></InputBar>
+    <>
+      <LeftNav chats={chats} createNewChat={createNewChat} setActiveChat={setActiveChat} clearChats={clearChats}></LeftNav>
+      <div id="main_page">
+        <TopNav></TopNav>
+        <ChatPage active_chat={active_chat} chats={chats}></ChatPage>
+
+        <InputBar createNewChat={createNewChat} setReqRes={setReqRes} ></InputBar>
 
 
       </div>
-    
+
     </>
 
   );

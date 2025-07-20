@@ -2,15 +2,15 @@
 
 
 
-import {Profile_icon}  from '../../icons';
+import {ProfileIcon}  from '../../icons';
 
-const profile=()=>{
+const Profile=()=>{
 
     return (
         <>
           <div id="left_nav_top" className="left_bar">
                 <div className="left_nav_icons">
-                    <div id="profile_icon"><Profile_icon></Profile_icon></div>
+                    <div id="profile_icon"><ProfileIcon></ProfileIcon></div>
                     <div></div>
                 </div>
                 <div className="left_nav_bar">
@@ -25,4 +25,4 @@ const profile=()=>{
 }
 
 
-export default profile;
+export default Profile;

@@ -1,5 +1,5 @@
 
-import {About_icon, Help_icon, Privacy_icon, Setting_icon} from '../../icons'
+import {AboutIcon, HelpIcon, PrivacyIcon, SettingIcon} from '../../icons'
 
 
 const others=()=>{
@@ -12,14 +12,14 @@ const others=()=>{
 
        {/*  <!-- setting icon --> */}
         
-            <Setting_icon ></Setting_icon>
-            <Privacy_icon></Privacy_icon>
-            <Help_icon></Help_icon>
-            <About_icon></About_icon>
+            <SettingIcon ></SettingIcon>
+            <PrivacyIcon></PrivacyIcon>
+            <HelpIcon></HelpIcon>
+            <AboutIcon></AboutIcon>
         
-        {/* <!--     <div id="privacy_icon"></div>
-    <div id="about_icon"></div>
-    <div id="help_icon"></div>
+        {/* <!--     <div id="privacyIcon"></div>
+    <div id="aboutIcon"></div>
+    <div id="helpIcon"></div>
 --> */}
     </div>
     <div className="left_nav_bar">

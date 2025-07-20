@@ -1,10 +1,10 @@
 
 import {useState} from 'react'
-import { Bot_icon } from "./icons";
+import { BotIcon } from "./icons";
 
 
 
-const Top_nav =(props)=>{
+const TopNav =(props)=>{
 
     const [nav_flag,setNavFlag]=useState(true);
 const leftNavControl=()=>{
@@ -27,11 +27,11 @@ const leftNavControl=()=>{
 
     <div id="top_nav_bar">
 <span > <h1 onClick={()=>leftNavControl()}style={{height:"100%",width:"100%"}}> =</h1></span>
-<span><h1 style={{display:"inline"}}>SBH CHATBOT  <Bot_icon></Bot_icon></h1> </span>
+<span><h1 style={{display:"inline"}}>SBH CHATBOT  <BotIcon></BotIcon></h1> </span>
 
 
     </div>
     
     </>
 }
-export default Top_nav;
+export default TopNav;

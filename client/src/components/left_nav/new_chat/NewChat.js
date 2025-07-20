@@ -1,9 +1,9 @@
 
 
 import { useEffect } from 'react';
-import { New_chat_icon } from '../../icons';
+import { NewChatIcon } from '../../icons';
 
-const NewChat=()=>{
+const NewChat=(props)=>{
     
     useEffect(()=>{
 
@@ -15,12 +15,12 @@ const NewChat=()=>{
     return (
         <>
            
-        <div  className="left_bar">
+        <div  className="left_bar"> 
     <div className="left_nav_icons">
-        <div id="new_chat_icon"  ><New_chat_icon></New_chat_icon> </div>
+        <div id="new_chat_icon"  ><NewChatIcon func={props.createNewChat}></NewChatIcon> </div>
     </div>
     <div className="left_nav_bar">
-        <div  onClick={()=>"createChat"} className="left_option"  >
+        <div  onClick={()=>props.createNewChat()} className="left_option"  >
             <h3 >New Chat</h3>
         </div>
        

@@ -3,19 +3,17 @@
 
 
 
-export  const HistoryList=(props)=>{
-
-
-    
+export const HistoryList = (props) => {
 
     return <>
-    
-  
-    {
-        <div>sbh 1 </div>
-    }
-    
-    
+
+        {
+            props.chats.map((chat,i) => {
+               return <div onClick={() => {props.setActiveChat(i)}}>Chat {i} </div>
+            }
+            )
+
+        }
     </>
 }
 
