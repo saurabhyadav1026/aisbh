@@ -25,7 +25,7 @@ const InputBar = (props) => {
 
  if(reqk.length===0)return;          // return if blank input
 
- props.setReqRes(req,reqk);
+ props.setReqRes(req,reqk.join(" "));
  io.value="";                   // to clear the input bar
     }
 
