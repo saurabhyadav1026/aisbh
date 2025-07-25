@@ -1,6 +1,6 @@
 const  express =require( 'express');
 const  cors=require('cors')
-const getRest=require('./controll/resses')
+const getRess=require('./controll/resses')
 
 
 
@@ -16,6 +16,7 @@ app.use(express.json());
 // middleware
 app.get('/api/sbh',(req,res)=>{
     res.json({sbh:getRess(req.query.reqq)})
+    console.log("ssssbbbb"+getRess(req.query.reqq))
 })
 
 
