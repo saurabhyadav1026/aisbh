@@ -1,4003 +1,4003 @@
 const t2 = [
   {
-    "reqs": [
+    reqs: [
       "hey",
       "good morning",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "created",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "date",
       "day"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "sunny",
       "forecast",
       "temperature"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "latest news",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "funny",
       "joke",
       "make me laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "support",
       "guide"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "project",
       "study",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "programming",
       "Python",
       "AI"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "what",
       "can you",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hello",
       "what's up",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "developer",
       "who are you",
       "what can you do"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "date",
       "time",
       "today"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "weather",
       "sunny",
       "temperature"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "headlines",
       "news",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "sad",
       "bore",
       "laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "help",
       "guide",
       "assist"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "project",
       "assignment",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "JavaScript",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "do you",
       "why",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hi",
       "hello",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "created",
       "what can you do",
       "your name"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "day",
       "current time",
       "time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "climate",
       "forecast",
       "temperature"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "news",
       "current affairs"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "bore",
       "sad",
       "make me laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "guide",
       "instructions",
       "assist"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "math",
       "study"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "Python",
       "AI",
       "programming"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "what",
       "why",
       "do you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "hello",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "your name",
       "what can you do",
       "developer"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "current time",
       "today",
       "day"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "raining",
       "forecast"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "headlines",
       "current affairs"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "joke",
       "make me laugh",
       "bore"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "help",
       "instructions",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "assignment",
       "homework",
       "project"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "machine learning",
       "AI",
       "programming"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "do you",
       "what",
       "can you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hello",
       "good evening",
       "hey"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "invented",
       "created",
       "what can you do"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "current time",
       "day",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "weather",
       "sunny",
       "raining"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "breaking news",
       "latest news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "bore",
       "funny"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "guide",
       "help",
       "support"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "assignment",
       "project",
       "homework"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "coding",
       "programming",
       "machine learning"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "do you",
       "why",
       "how"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hello",
       "good evening",
       "hey"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "created",
       "your name",
       "developer"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "date",
       "day",
       "time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "climate",
       "forecast"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "breaking news",
       "news",
       "headlines"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "laugh",
       "make me laugh",
       "joke"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "how to",
       "support",
       "help"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "math",
       "assignment",
       "project"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "JavaScript",
       "programming",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "how",
       "what",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good morning",
       "hi",
       "hey"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "created",
       "invented",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "time",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "climate",
       "raining",
       "forecast"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "headlines",
       "latest news",
       "news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "joke",
       "funny",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "support",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "assignment",
       "project"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "Python",
       "JavaScript",
       "AI"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "why",
       "what",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hi",
       "good evening",
       "good morning"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "who are you",
       "developer",
       "what can you do"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "day",
       "today"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "forecast",
       "temperature",
       "raining"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "breaking news",
       "current affairs"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "sad",
       "bore"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "guide",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "homework",
       "assignment",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "JavaScript",
       "machine learning"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "what",
       "how",
       "can you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hi",
       "good evening",
       "hello"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "created",
       "what can you do",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "today",
       "day",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "climate",
       "sunny",
       "temperature"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "latest news",
       "news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "joke",
       "sad",
       "funny"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "how to",
       "support",
       "instructions"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "assignment",
       "project",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "programming",
       "machine learning"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "why",
       "how"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hi",
       "good evening",
       "good morning"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "your name",
       "developer"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "today",
       "current time",
       "day"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "climate",
       "weather",
       "sunny"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "current affairs",
       "headlines"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "laugh",
       "funny",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "guide",
       "help"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "study",
       "homework"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "Python",
       "JavaScript",
       "machine learning"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "what",
       "do you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good morning",
       "hello",
       "hey"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "created",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "today",
       "day",
       "time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "forecast",
       "raining",
       "temperature"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "headlines",
       "current affairs"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "funny",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "instructions",
       "support",
       "help"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "homework",
       "assignment",
       "science"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "machine learning",
       "JavaScript"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "what",
       "how"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "good evening",
       "hello"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "created",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "today",
       "date",
       "now"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "raining",
       "climate",
       "weather"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "headlines",
       "latest news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "sad",
       "bore"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "support",
       "instructions"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "study",
       "project",
       "homework"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "machine learning",
       "AI",
       "programming"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "tell me",
       "do you",
       "how"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "good morning",
       "hello"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "invented",
       "your name",
       "what can you do"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "current time",
       "now",
       "day"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "raining",
       "weather"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "breaking news",
       "latest news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "bore",
       "make me laugh",
       "joke"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "help",
       "instructions"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "math",
       "assignment",
       "science"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "coding",
       "machine learning",
       "Python"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "how",
       "tell me",
       "do you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hey",
       "hello",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "your name",
       "invented",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "day",
       "date",
       "now"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "climate",
       "temperature",
       "sunny"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "breaking news",
       "current affairs"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "joke",
       "sad",
       "make me laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "help",
       "support",
       "guide"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "project",
       "homework",
       "assignment"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "JavaScript",
       "machine learning",
       "programming"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "do you",
       "tell me",
       "can you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "hey",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "who are you",
       "invented",
       "your name"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "day",
       "today"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "weather",
       "climate"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "breaking news",
       "headlines",
       "latest news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "funny",
       "laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "help",
       "how to",
       "guide"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "study",
       "math",
       "project"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "Python",
       "machine learning",
       "AI"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "why",
       "what",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good evening",
       "hey",
       "hello"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "your name",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "day",
       "today",
       "now"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "raining",
       "temperature",
       "sunny"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "breaking news",
       "current affairs",
       "headlines"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "sad",
       "bore",
       "laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "help",
       "guide"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "assignment",
       "math",
       "study"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "programming",
       "coding",
       "Python"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "why",
       "how",
       "what"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hello",
       "good morning",
       "hey"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "created",
       "invented",
       "what can you do"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "day",
       "now",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "weather",
       "sunny",
       "raining"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "headlines",
       "news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "sad",
       "make me laugh",
       "laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "assist",
       "instructions"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "assignment",
       "study"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "JavaScript",
       "machine learning"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "how",
       "what",
       "why"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hey",
       "good morning",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "your name",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "current time",
       "now",
       "time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "sunny",
       "climate",
       "weather"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "breaking news",
       "headlines",
       "current affairs"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "funny",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "guide",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "homework",
       "study",
       "project"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "JavaScript",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "do you",
       "what",
       "can you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hey",
       "good morning",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "invented",
       "who are you",
       "developer"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "day",
       "current time",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "weather",
       "raining",
       "sunny"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "latest news",
       "headlines"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "laugh",
       "make me laugh",
       "bore"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "instructions",
       "how to",
       "support"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "math",
       "study"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "Python",
       "JavaScript"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "why",
       "how"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good evening",
       "good morning",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "created",
       "what can you do",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "time",
       "now",
       "today"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "sunny",
       "raining",
       "temperature"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "headlines",
       "latest news",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "sad",
       "funny"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "instructions",
       "guide"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "study",
       "project",
       "assignment"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "programming",
       "AI",
       "machine learning"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "tell me",
       "why",
       "can you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good morning",
       "good evening",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "your name",
       "developer",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "date",
       "time",
       "day"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "climate",
       "weather",
       "forecast"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "current affairs",
       "latest news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "sad",
       "bore",
       "make me laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "instructions",
       "help",
       "assist"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "project",
       "homework",
       "assignment"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "Python",
       "coding",
       "JavaScript"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "how",
       "why"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good morning",
       "hey",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "invented",
       "your name",
       "developer"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "today",
       "day",
       "current time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "forecast",
       "raining"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "current affairs",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "joke",
       "funny"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "guide",
       "support"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "study",
       "assignment",
       "project"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "coding",
       "Python",
       "JavaScript"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "tell me",
       "how"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hey",
       "good morning",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "created",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "time",
       "now",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "sunny",
       "forecast",
       "climate"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "breaking news",
       "latest news",
       "headlines"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "laugh",
       "joke",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "support",
       "guide"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "project",
       "study",
       "homework"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "Python",
       "machine learning"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "why",
       "what"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "good evening",
       "hey"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "your name",
       "who are you",
       "created"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "time",
       "current time",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "weather",
       "sunny",
       "raining"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "headlines",
       "current affairs",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "joke",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "how to",
       "instructions"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "homework",
       "assignment",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "JavaScript",
       "Python",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "why",
       "how",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "hi",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "who are you",
       "created",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "time",
       "today",
       "current time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "sunny",
       "forecast",
       "climate"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "headlines",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "joke",
       "make me laugh",
       "funny"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "how to",
       "guide",
       "assist"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "project",
       "study",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "coding",
       "programming",
       "AI"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "do you",
       "what",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "hello",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "created",
       "what can you do",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "time",
       "current time",
       "day"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "forecast",
       "sunny",
       "climate"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "breaking news",
       "news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "joke",
       "sad",
       "bore"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "how to",
       "guide"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "math",
       "project"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "coding",
       "JavaScript",
       "Python"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "tell me",
       "do you",
       "can you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "good morning",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "developer",
       "created",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "day",
       "current time",
       "time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "climate",
       "temperature",
       "sunny"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "news",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "funny",
       "laugh",
       "joke"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "help",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "project",
       "science",
       "homework"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "Python",
       "programming",
       "AI"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "what",
       "tell me",
       "how"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hello",
       "hi",
       "hey"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "invented",
       "created",
       "developer"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "today",
       "time",
       "current time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "raining",
       "temperature",
       "forecast"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "headlines",
       "news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "bore",
       "laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "guide",
       "help",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "assignment",
       "homework"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "machine learning",
       "Python",
       "AI"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "how",
       "do you",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hi",
       "hey",
       "good morning"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "developer",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "time",
       "day",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "raining",
       "sunny"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "latest news",
       "current affairs"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "funny",
       "bore",
       "laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "help",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "project",
       "homework"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "programming",
       "JavaScript"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "do you",
       "why",
       "can you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good evening",
       "hey",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "who are you",
       "invented",
       "created"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "day",
       "now",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "climate",
       "temperature",
       "forecast"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "headlines",
       "news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "joke",
       "make me laugh",
       "laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "instructions",
       "guide",
       "help"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "assignment",
       "study"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "programming",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "why",
       "what"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hello",
       "hi",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "created",
       "developer",
       "your name"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "today",
       "current time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "raining",
       "sunny",
       "climate"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "breaking news",
       "news",
       "headlines"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "funny",
       "joke",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "how to",
       "guide",
       "assist"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "assignment",
       "homework",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "programming",
       "JavaScript",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "what",
       "how"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good evening",
       "hi",
       "hey"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "developer",
       "your name",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "date",
       "time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "weather",
       "sunny"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "breaking news",
       "current affairs",
       "headlines"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "sad",
       "make me laugh",
       "bore"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "instructions",
       "help",
       "support"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "assignment",
       "study"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "programming",
       "JavaScript"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "how",
       "can you",
       "do you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hi",
       "what's up",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "your name",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "day",
       "time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "raining",
       "weather"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "news",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "joke",
       "sad",
       "make me laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "help",
       "instructions",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "homework",
       "study",
       "assignment"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "JavaScript",
       "machine learning",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "how",
       "why",
       "do you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good morning",
       "good evening",
       "hello"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "who are you",
       "developer",
       "what can you do"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "current time",
       "time",
       "today"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "weather",
       "sunny",
       "forecast"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "current affairs",
       "news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "bore",
       "funny",
       "laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "how to",
       "help",
       "instructions"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "homework",
       "study",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "JavaScript",
       "AI",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "do you",
       "can you",
       "why"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hey",
       "good morning",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "created",
       "developer",
       "your name"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "day",
       "current time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "raining",
       "forecast"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "headlines",
       "current affairs",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "laugh",
       "bore"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "how to",
       "help"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "homework",
       "project",
       "science"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "coding",
       "programming",
       "JavaScript"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "how",
       "why",
       "can you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "hi",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "developer",
       "your name",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "day",
       "now",
       "current time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "weather",
       "sunny",
       "forecast"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "current affairs",
       "latest news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "joke",
       "sad",
       "bore"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "guide",
       "assist",
       "instructions"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "assignment",
       "study"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "JavaScript",
       "coding",
       "AI"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "do you",
       "why",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good evening",
       "hey",
       "what's up"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "invented",
       "what can you do",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "day",
       "today"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "forecast",
       "temperature",
       "raining"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "headlines",
       "current affairs",
       "news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "bore",
       "make me laugh",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "help",
       "instructions",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "homework",
       "assignment"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "programming",
       "JavaScript",
       "AI"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "what",
       "how",
       "do you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hey",
       "hi",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "created",
       "who are you",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "date",
       "day",
       "today"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "sunny",
       "raining",
       "climate"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "headlines",
       "current affairs",
       "latest news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "laugh",
       "sad",
       "make me laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "instructions",
       "guide",
       "support"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "project",
       "science",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "Python",
       "JavaScript",
       "machine learning"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "what",
       "why"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good morning",
       "what's up",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "invented",
       "your name",
       "what can you do"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "date",
       "time",
       "today"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "sunny",
       "forecast",
       "raining"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "breaking news",
       "latest news",
       "headlines"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "funny",
       "sad",
       "laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "guide",
       "help"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "study",
       "assignment",
       "homework"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "machine learning",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "how",
       "what",
       "why"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good evening",
       "hey",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "your name",
       "invented",
       "what can you do"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "current time",
       "day",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "sunny",
       "raining",
       "forecast"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "current affairs",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "bore",
       "laugh",
       "make me laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "help",
       "how to",
       "guide"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "assignment",
       "science",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "machine learning",
       "coding",
       "Python"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "tell me",
       "why"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hello",
       "hey",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "who are you",
       "developer"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "date",
       "now",
       "time"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "forecast",
       "climate",
       "weather"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "news",
       "headlines"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "laugh",
       "sad",
       "make me laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "support",
       "guide"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "homework",
       "math",
       "project"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "Python",
       "AI",
       "programming"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "why",
       "what",
       "do you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hello",
       "good morning",
       "hey"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "invented",
       "what can you do",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "time",
       "now",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "forecast",
       "temperature",
       "raining"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "headlines",
       "current affairs"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "bore",
       "funny",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "help",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "homework",
       "assignment",
       "study"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "JavaScript",
       "Python"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "why",
       "what",
       "do you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "hi",
       "hello"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "developer",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "today",
       "current time",
       "day"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "forecast",
       "weather",
       "raining"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "news",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "bore",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "assist",
       "guide"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "homework",
       "study"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "JavaScript",
       "programming",
       "Python"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "tell me",
       "do you",
       "what"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hello",
       "what's up",
       "hi"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "who are you",
       "what can you do",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "time",
       "current time",
       "now"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "weather",
       "sunny",
       "raining"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "current affairs",
       "news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "laugh",
       "sad",
       "make me laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "guide",
       "help"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "project",
       "science",
       "study"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "machine learning",
       "programming",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "tell me",
       "do you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "hi",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "what can you do",
       "your name",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "time",
       "date",
       "day"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "climate",
       "temperature",
       "sunny"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "breaking news",
       "current affairs",
       "news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "joke",
       "bore",
       "make me laugh"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "how to",
       "support",
       "help"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "study",
       "project"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "Python",
       "AI",
       "JavaScript"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "do you",
       "why"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good morning",
       "what's up",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "your name",
       "what can you do",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "current time",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "sunny",
       "raining",
       "climate"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "latest news",
       "current affairs"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "bore",
       "sad",
       "funny"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "instructions",
       "help"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "project",
       "math",
       "science"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "JavaScript",
       "AI",
       "programming"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "what",
       "how",
       "can you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "what's up",
       "good evening",
       "hello"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "invented",
       "created",
       "your name"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "date",
       "current time",
       "now"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "raining",
       "weather"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "latest news",
       "news",
       "headlines"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "funny",
       "make me laugh",
       "bore"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "assist",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "homework",
       "project",
       "science"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "coding",
       "programming"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "what",
       "can you",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good morning",
       "hi",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "your name",
       "what can you do",
       "invented"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "time",
       "day",
       "today"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "sunny",
       "weather",
       "climate"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "headlines",
       "latest news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "funny",
       "bore",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "assist",
       "help",
       "how to"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "assignment",
       "homework"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "programming",
       "coding",
       "Python"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "do you",
       "how",
       "what"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "good morning",
       "hi",
       "good evening"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "invented",
       "your name",
       "who are you"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "now",
       "current time",
       "date"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "forecast",
       "sunny"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "current affairs",
       "latest news",
       "breaking news"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "make me laugh",
       "bore",
       "sad"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "guide",
       "support",
       "help"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "math",
       "assignment"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "JavaScript",
       "Python",
       "programming"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "can you",
       "why",
       "tell me"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   },
   {
-    "reqs": [
+    reqs: [
       "hello",
       "good evening",
       "what's up"
     ],
-    "res": "Hello! How can I assist you today?"
+    res: "Hello! How can I assist you today?"
   },
   {
-    "reqs": [
+    reqs: [
       "who are you",
       "your name",
       "what can you do"
     ],
-    "res": "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
+    res: "I am an AI chatbot created by Saurabh Yadav from SbhTechHub. I'm here to help you."
   },
   {
-    "reqs": [
+    reqs: [
       "current time",
       "time",
       "now"
     ],
-    "res": "I cannot access the current time or date, but you can check your device clock for accurate info."
+    res: "I cannot access the current time or date, but you can check your device clock for accurate info."
   },
   {
-    "reqs": [
+    reqs: [
       "temperature",
       "forecast",
       "climate"
     ],
-    "res": "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
+    res: "I'm not connected to real-time weather services, but you can try websites like AccuWeather or Weather.com."
   },
   {
-    "reqs": [
+    reqs: [
       "news",
       "breaking news",
       "current affairs"
     ],
-    "res": "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
+    res: "Sorry, I can't fetch real-time news. You can visit news websites like BBC, Times of India, or Google News."
   },
   {
-    "reqs": [
+    reqs: [
       "funny",
       "laugh",
       "joke"
     ],
-    "res": "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
+    res: "Why don't scientists trust atoms? Because they make up everything! \ud83d\ude04"
   },
   {
-    "reqs": [
+    reqs: [
       "support",
       "how to",
       "assist"
     ],
-    "res": "Sure, tell me what you need help with and I'll do my best to guide you."
+    res: "Sure, tell me what you need help with and I'll do my best to guide you."
   },
   {
-    "reqs": [
+    reqs: [
       "science",
       "assignment",
       "math"
     ],
-    "res": "Education is important! Let me know the topic and I'll try to help."
+    res: "Education is important! Let me know the topic and I'll try to help."
   },
   {
-    "reqs": [
+    reqs: [
       "AI",
       "programming",
       "coding"
     ],
-    "res": "I love talking about tech! Ask me anything about programming or AI."
+    res: "I love talking about tech! Ask me anything about programming or AI."
   },
   {
-    "reqs": [
+    reqs: [
       "what",
       "do you",
       "can you"
     ],
-    "res": "Can you please clarify your question? I\u2019ll try my best to answer."
+    res: "Can you please clarify your question? I\u2019ll try my best to answer."
   }
 ]
 
