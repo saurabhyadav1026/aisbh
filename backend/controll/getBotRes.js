@@ -1,13 +1,13 @@
 
 
- const requestes=require('../training/t2');
+import requestes from '../training/t2.js';
  
  
  
  
  
  
- const getRess = (reqS) => {
+ const getBotRes = (reqS) => {
      const   req=reqS.split(" ")      ;                                   // req= input split list  
      const  t = []                                 // list to store  match counts of key in reuests list
    
@@ -23,10 +23,8 @@
      for (let i=0;i<t.length;i++){
          if(t[i]>t[max])max=i;               // to find the max matching index of requests list
      }
-    
      return requestes[max].res;          // to return the response having  max matching 
  
  }
 
-
- module.exports=getRess;
+export default getBotRes;

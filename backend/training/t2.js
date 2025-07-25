@@ -1,3 +1,6 @@
+
+
+
 const t2 = [
   {
     reqs: [
@@ -4003,4 +4006,5 @@ const t2 = [
 
 
 
-module.exports=t2;
+
+export default t2;

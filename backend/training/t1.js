@@ -30,5 +30,6 @@ const t1 = [
  ]
  
 
+ 
 
- module.exports = t1;  //exporting the array of objects
+ export default t1;

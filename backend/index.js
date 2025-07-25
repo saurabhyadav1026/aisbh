@@ -1,7 +1,15 @@
-const  express =require( 'express');
-const  cors=require('cors')
-const getRess=require('./controll/resses')
-const dotenv=require('dotenv')
+  import express from 'express';
+import  cors from 'cors';
+import dotenv from 'dotenv'
+
+
+import getBotRes from './controll/getBotRes.js';
+import getGenRes from './controll/getGenRes.js';
+
+
+
+
+
  dotenv.config()
 
 
@@ -15,10 +23,15 @@ app.use(express.json());
 
 
 // middleware
-app.get('/api/sbh',(req,res)=>{
-    res.json({sbh:getRess(req.query.reqq)})
+app.get('/sbh/bot',(req,res)=>{
+    res.json({sbh:getBotRes(req.query.reqq)})
 })
 
+ app.get('/sbh/genai',async (req,res)=>{
+    
+    console.log("hhh")
+    res.json({sbh:await getGenRes(req.query.reqq)})
+})
 
 
 // start server 

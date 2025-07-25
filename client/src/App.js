@@ -30,7 +30,7 @@ export const App = () => {
 
   const [chats, setChats] = useState(old_chat);
   const [active_chat, setActiveChat] = useState(chats.length);
-
+  const [isOnline,updateOnline]=useState('Online')
 
 
 
@@ -50,7 +50,7 @@ export const App = () => {
     if (chats.length === active_chat) temp_chats.push({ id: "ch_" + chats.length, reqs: [], ress: [] });
 
     temp_chats[active_chat].reqs.push(req);
-    temp_chats[active_chat].ress.push(getRes(reqk));
+    temp_chats[active_chat].ress.push(getRes(reqk,isOnline));
 
 
     setChats(temp_chats);
@@ -71,12 +71,25 @@ export const App = () => {
   }
 
 
+const setOnline=()=>{
+
+  if(isOnline==='Online'){
+    updateOnline('Offline');
+    return "Offline"
+  }
+  else{
+    updateOnline('Online');
+    return "Online"
+  }
+}
+
+
   return (
 
     <>
       <LeftNav chats={chats} createNewChat={createNewChat} setActiveChat={setActiveChat} clearChats={clearChats}></LeftNav>
       <div id="main_page">
-        <TopNav></TopNav>
+        <TopNav setOnline={setOnline} isOnline={isOnline}></TopNav>
         <ChatPage active_chat={active_chat} chats={chats}></ChatPage>
 
         <InputBar createNewChat={createNewChat} setReqRes={setReqRes} ></InputBar>
