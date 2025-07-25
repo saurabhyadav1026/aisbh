@@ -1,7 +1,8 @@
 const  express =require( 'express');
 const  cors=require('cors')
 const getRess=require('./controll/resses')
-
+const dotenv=require('dotenv')
+ dotenv.config()
 
 
 // middleware setup
