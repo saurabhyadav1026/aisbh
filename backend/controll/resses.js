@@ -23,7 +23,7 @@
      for (let i=0;i<t.length;i++){
          if(t[i]>t[max])max=i;               // to find the max matching index of requests list
      }
-     console.log("sssss")
+    
      return requestes[max].res;          // to return the response having  max matching 
  
  }

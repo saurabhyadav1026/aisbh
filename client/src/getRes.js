@@ -9,7 +9,6 @@ let rrr= fetch(process.env.REACT_APP_API_KEY+'/api/sbh?reqq='+req)
     })
     .catch(error => console.error('Error:', error));
     
-  console.log("rrr= "+rrr)
     return rrr;
 
 

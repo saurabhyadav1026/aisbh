@@ -16,11 +16,11 @@ app.use(express.json());
 // middleware
 app.get('/api/sbh',(req,res)=>{
     res.json({sbh:getRess(req.query.reqq)})
-    console.log("ssssbbbb"+getRess(req.query.reqq))
 })
 
 
 
 // start server 
-app.listen(5000)
+const port=process.env.PORT || 5000;
+app.listen(port)
 
