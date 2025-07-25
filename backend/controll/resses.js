@@ -1,6 +1,6 @@
 
 
- const requestes=require('../training/t1');
+ const requestes=require('../training/t2');
  
  
  
