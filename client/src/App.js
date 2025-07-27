@@ -30,7 +30,7 @@ export const App = () => {
 
   const [chats, setChats] = useState(old_chat);
   const [active_chat, setActiveChat] = useState(chats.length);
-  const [isOnline,updateOnline]=useState('Online')
+  const [isOnline,updateOnline]=useState('genai')
 
 
 
@@ -73,12 +73,12 @@ export const App = () => {
 
 const setOnline=()=>{
 
-  if(isOnline==='Online'){
-    updateOnline('Offline');
+  if(isOnline==='genai'){
+    updateOnline('bot');
     return "Offline"
   }
   else{
-    updateOnline('Online');
+    updateOnline('genai');
     return "Online"
   }
 }
