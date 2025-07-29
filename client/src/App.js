@@ -78,15 +78,15 @@ console.log(chats)
 
 
 const setOnline=()=>{
-return;
- /*  if(isOnline==='genai'){
+
+  if(isOnline==='genai'){
     updateOnline('bot');
-    return "Offline"
+   
   }
   else{
     updateOnline('genai');
-    return "Online"
-  } */
+   
+  } 
 }
 
 
