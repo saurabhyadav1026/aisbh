@@ -33,9 +33,6 @@ export const App = () => {
   const [isOnline,updateOnline]=useState('bot')
 
 
-useEffect(()=>{},[active_chat])
-
-console.log(chats)
 
 
 
