@@ -1,10 +1,17 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import TopNav from "./components/TopNav";
 import LeftNav from './components/left_nav/LeftNav';
 import ChatPage from './components/ChatPage';
 import InputBar from './components/InputBar';
 import getRes from "./getRes";
+import getImageText from "./getImageText";
+
+
+
+
+
+
 
 export const App = () => {
 
@@ -32,6 +39,8 @@ export const App = () => {
   const [active_chat, setActiveChat] = useState(chats.length);
   const [isOnline,updateOnline]=useState('bot')
 
+const [attachment_file,addAttachmentFile]=useState(null);
+
 
 
 
@@ -46,14 +55,32 @@ export const App = () => {
 
 
 
-  // to add req and res in the chats list
+  // to add req and res in the chats list   reqk is the request string without trailing of witespace 
   const setReqRes = async(req, reqk) => {
+
+let res="";
+const file=attachment_file;
+addAttachmentFile(null);
+if(file!==null){
+
+  const text=await getImageText(file);
+
+  addAttachmentFile(null);
+
+if(text!==""){
+  res=" Your image text is: "+text+" and we get that: ";
+  reqk=reqk+text;
+}
+}
 
     let temp_chats = [...chats];
     if (chats.length === active_chat) temp_chats.push({ id: "ch_" + chats.length, reqs: [], ress: [] });
 
+
+
+res+=await getRes(reqk,isOnline);
     temp_chats[active_chat].reqs.push(req);
-    temp_chats[active_chat].ress.push(await getRes(reqk,isOnline));
+    temp_chats[active_chat].ress.push(res);
 
 
     setChats(temp_chats);
@@ -95,7 +122,7 @@ const setOnline=()=>{
         <TopNav setOnline={setOnline} isOnline={isOnline}></TopNav>
         <ChatPage active_chat={active_chat} setChats={setChats} chats={chats}></ChatPage>
 
-        <InputBar createNewChat={createNewChat} setReqRes={setReqRes} ></InputBar>
+        <InputBar attachment_file={attachment_file}addAttachmentFile={addAttachmentFile} createNewChat={createNewChat} setReqRes={setReqRes} ></InputBar>
 
 
       </div>
@@ -105,3 +132,6 @@ const setOnline=()=>{
   );
 }
 export default App;
+
+
+

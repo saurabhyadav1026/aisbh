@@ -98,8 +98,8 @@ return <svg style={{cursor:"pointer"}} onClick={()=>props.func()} xmlns="http://
 }
 
 
-export const AddAttachmentIcon=()=>{
-return <svg style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+export const AddAttachmentIcon=(props)=>{
+return <svg  onClick={()=>props.func()} style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
         viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
         strokeLinejoin="round" className="lucide lucide-paperclip-icon lucide-paperclip">
         <path
@@ -186,4 +186,23 @@ export  const LikeRes=(props)=>{
 
 export const HistOption=(props)=>{
     return<></>
+}
+
+
+
+export const MicIcon=(props)=>{
+
+    return <svg style={{cursor:"pointer"}} onClick={()=>props.func()} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mic-icon lucide-mic"><path d="M12 19v3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect x="9" y="2" width="6" height="13" rx="3"/></svg>
+
+}
+
+export const SpeakerIcon=(props)=>{
+
+    return <svg style={{cursor:"pointer"}} onClick={()=>props.func(props.r_no)} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-volume2-icon lucide-volume-2"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></svg>
+}
+
+
+export const LoadingIcon=()=>{
+
+    return<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-loader-circle-icon lucide-loader-circle"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
 }
