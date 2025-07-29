@@ -2,7 +2,7 @@
 
 export const BotIcon=()=>{
 
-return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+return <svg style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
                 strokeLinecap="round" strokeLinejoin="round"
                 className="lucide lucide-brain-circuit-icon lucide-brain-circuit">
@@ -27,7 +27,7 @@ return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 
 export const ProfileIcon=()=>{
 
-return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+return <svg style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
                 strokeLinecap="round" strokeLinejoin="round"
                 className="lucide lucide-user-round-pen-icon lucide-user-round-pen">
@@ -41,7 +41,7 @@ return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 
 export const HistoryIcon=()=>{
 
-return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+return <svg style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
                 strokeLinecap="round" strokeLinejoin="round"
                 className="lucide lucide-history-icon lucide-history">
@@ -55,7 +55,7 @@ return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 
 
 export const NewChatIcon=(props)=>{
-return <svg  onClick={()=>props.func()} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-square-diff-icon lucide-message-square-diff"><path d="m5 19-2 2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2"/><path d="M9 10h6"/><path d="M12 7v6"/><path d="M9 17h6"/>
+return <svg style={{cursor:"pointer"}}  onClick={()=>props.func()} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-square-diff-icon lucide-message-square-diff"><path d="m5 19-2 2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2"/><path d="M9 10h6"/><path d="M12 7v6"/><path d="M9 17h6"/>
         <title>New Chat</title>
         </svg>
 
@@ -63,7 +63,7 @@ return <svg  onClick={()=>props.func()} xmlns="http://www.w3.org/2000/svg" width
 
 export const SettingIcon=()=>{
 
-return<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+return<svg style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
                 strokeLinecap="round" strokeLinejoin="round"
                 className="lucide lucide-settings-icon lucide-settings">
@@ -77,29 +77,29 @@ return<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 
 export const PrivacyIcon=()=>{ 
 
-    return <svg xmlns="http://www.w3.org/2000/svg" style={{margin:"5px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-earth-lock-icon lucide-earth-lock"><path d="M7 3.34V5a3 3 0 0 0 3 3"/><path d="M11 21.95V18a2 2 0 0 0-2-2 2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M12 2a10 10 0 1 0 9.54 13"/><path d="M20 6V4a2 2 0 1 0-4 0v2"/><rect width="8" height="5" x="14" y="6" rx="1"/></svg>
+    return <svg style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" style={{margin:"5px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-earth-lock-icon lucide-earth-lock"><path d="M7 3.34V5a3 3 0 0 0 3 3"/><path d="M11 21.95V18a2 2 0 0 0-2-2 2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M12 2a10 10 0 1 0 9.54 13"/><path d="M20 6V4a2 2 0 1 0-4 0v2"/><rect width="8" height="5" x="14" y="6" rx="1"/></svg>
 
 }
 
 export const AboutIcon=()=>{
-return <svg xmlns="http://www.w3.org/2000/svg" style={{margin:"2.5px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-info-icon lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+return <svg style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" style={{margin:"2.5px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-info-icon lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
 }
 
 export const HelpIcon=()=>
 {
     
-    return <svg xmlns="http://www.w3.org/2000/svg" style={{margin:"2.5px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-hand-helping-icon lucide-hand-helping"><path d="M11 12h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 14"/><path d="m7 18 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 13 6 6"/></svg>
+    return <svg style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" style={{margin:"2.5px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-hand-helping-icon lucide-hand-helping"><path d="M11 12h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 14"/><path d="m7 18 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 13 6 6"/></svg>
 }
 
 export const ClearHistoryIcon=(props)=>{
 
-return <svg onClick={()=>props.func()} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-brush-cleaning-icon lucide-brush-cleaning"><path d="m16 22-1-4"/><path d="M19 13.99a1 1 0 0 0 1-1V12a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v.99a1 1 0 0 0 1 1"/><path d="M5 14h14l1.973 6.767A1 1 0 0 1 20 22H4a1 1 0 0 1-.973-1.233z"/><path d="m8 22 1-4"/><title>clear</title></svg>
+return <svg style={{cursor:"pointer"}} onClick={()=>props.func()} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-brush-cleaning-icon lucide-brush-cleaning"><path d="m16 22-1-4"/><path d="M19 13.99a1 1 0 0 0 1-1V12a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v.99a1 1 0 0 0 1 1"/><path d="M5 14h14l1.973 6.767A1 1 0 0 1 20 22H4a1 1 0 0 1-.973-1.233z"/><path d="m8 22 1-4"/><title>clear</title></svg>
 
 }
 
 
 export const AddAttachmentIcon=()=>{
-return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+return <svg style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
         viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
         strokeLinejoin="round" className="lucide lucide-paperclip-icon lucide-paperclip">
         <path
@@ -110,7 +110,7 @@ return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 
 export const SendIcon=(props)=>{
    
-return <svg onClick={()=>props.func()} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+return <svg style={{cursor:"pointer"}} onClick={()=>props.func()} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
         viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
         strokeLinejoin="round" className="lucide lucide-send-horizontal-icon lucide-send-horizontal">
         <path
@@ -126,7 +126,7 @@ return <svg onClick={()=>props.func()} xmlns="http://www.w3.org/2000/svg" width=
 
 export const Dislike=(props)=>{
 
-    return <svg onClick={()=>props.func(props.chat_no,props.r_no)} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+    return <svg style={{cursor:"pointer"}} onClick={()=>props.func(props.chat_no,props.r_no)} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
     stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
     className="lucide lucide-thumbs-down-icon lucide-thumbs-down">
     <path d="M17 14V2" />
@@ -136,7 +136,7 @@ export const Dislike=(props)=>{
         </svg>
 }
 export const Edit=(props)=>{
-return <svg onClick={()=>props.editReq(props.chat_no,props.r_no)} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+return <svg style={{cursor:"pointer"}} onClick={()=>props.func(props.r_no)} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
 fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
 strokeLinejoin="round" className="lucide lucide-pencil-icon lucide-pencil">
 <path
@@ -148,7 +148,7 @@ strokeLinejoin="round" className="lucide lucide-pencil-icon lucide-pencil">
 
 
 export const Copy=(props)=>{
-   return <svg onClick={()=>props.copyReq(props.chat_no,props.r_no)} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+   return <svg style={{cursor:"pointer"}} onClick={()=>props.func(props.r_no)} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                     strokeLinejoin="round" className="lucide lucide-copy-icon lucide-copy">
                                     <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
@@ -160,7 +160,7 @@ export const Copy=(props)=>{
 
 export const RegenerateBtn=(props)=>{
 
-    return <svg onClick={()=>props.regenrateRes(props.chat_no,props.r_no)} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+    return <svg style={{cursor:"pointer"}} onClick={()=>props.func(props.r_no)} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
     stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
     className="lucide lucide-refresh-ccw-dot-icon lucide-refresh-ccw-dot">
     <path d="M3 2v6h6" />
@@ -174,7 +174,7 @@ export const RegenerateBtn=(props)=>{
 
 export  const LikeRes=(props)=>{
 
-    return <svg onClick={()=>props.likeRes(props.chat_no,props.r_no)} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+    return <svg style={{cursor:"pointer"}} onClick={()=>props.func(props.r_no)} xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
     stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
     className="lucide lucide-thumbs-up-icon lucide-thumbs-up">
     <path d="M7 10v12" />

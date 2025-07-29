@@ -1,18 +1,22 @@
 
 
 
-const getRes=(req,isOnline)=>{
+const getRes=async(req,isOnline)=>{
 
-    const responser=isOnline;
-   
-let rrr= fetch(process.env.REACT_APP_API_KEY+'/sbh/'+responser+'?reqq='+req||"")
-.then(response => response.json())
-.then(data => {
-    return data.sbh;
-    })
-    .catch(error => console.error('Error:', error));
-    
-    return rrr;
+    const responser=process.env.REACT_APP_API_KEY+'/sbh/'+isOnline+'?reqq='+req||"";
+ 
+
+    try{
+
+const response=await fetch(responser);
+const data=await response.json();
+return data.sbh;
+
+    }
+    catch(error){
+        console.log(error);
+    }
+
 
 
 }
@@ -20,4 +24,4 @@ let rrr= fetch(process.env.REACT_APP_API_KEY+'/sbh/'+responser+'?reqq='+req||"")
 
 
 
-export default getRes;
+export default  getRes;

@@ -12,6 +12,21 @@ props
 const resShow=(props)=>{ 
 
 
+
+  const regenrateRes=(r)=>{
+   props.setChats([...props.chats]);
+
+    }
+
+
+
+
+
+
+
+
+
+
      return (
    <div className="res">
                 <div className="res_output">                 
@@ -22,17 +37,17 @@ const resShow=(props)=>{
                 <div className="res_option">
 
                    {/*  <!--  copy btn --> */}
-                    <span><Copy func={"copyRes"}  r_no={props.r_no}></Copy></span>
+                    <span><Copy func={copyRes} r_no={props.r_no} ></Copy></span>
 
                   {/*       <!--  like btn --> */}
-                    <span><LikeRes func={"likeRes"}  r_no={props.r_no}></LikeRes></span>
+                    <span><LikeRes func={likeRes} r_no={props.r_no}></LikeRes></span>
 
                      {/*    <!-- dislike btn --> */}
-                    <span><Dislike func={"dislikeRes"}  r_no={props.r_no} ></Dislike></span>
+                    <span><Dislike func={dislikeRes}  r_no={props.r_no} ></Dislike></span>
 
 
                       {/*   <!-- regenerate btn --> */}
-                    <span><RegenerateBtn func={"regenrateRes"}  r_no={props.r_no}></RegenerateBtn></span>
+                    <span><RegenerateBtn func={regenrateRes}  r_no={props.r_no}></RegenerateBtn></span>
 
                 </div>
 
@@ -45,3 +60,26 @@ const resShow=(props)=>{
 }
 
 export default resShow;
+
+
+
+
+const copyRes=(r)=>{
+
+  const text = document.getElementsByClassName("res_output")
+ navigator.clipboard.writeText(text[0].innerHTML).then(
+  ()=>alert(" text coppied.")
+ ) 
+
+  
+}
+
+const likeRes=(r)=>{
+  alert("Its my pleasure sir,I am always here for your help.  ")
+}
+
+
+const dislikeRes=(r)=>{
+  alert("I appolize, I will improve myself.Thanks for feedback.")
+}
+

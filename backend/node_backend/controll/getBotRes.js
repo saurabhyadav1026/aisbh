@@ -8,7 +8,7 @@ import requestes from '../training/t2.js';
  
  
  const getBotRes = (reqS) => {
-     const   req=reqS.split(" ")      ;                                   // req= input split list  
+     const   req=reqS.split(" ");                                   // req= input split list  
      const  t = []                                 // list to store  match counts of key in reuests list
    
    for (let i = 0; i < requestes.length; i++) {        // loop for reuests list

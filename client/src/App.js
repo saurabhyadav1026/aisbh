@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import TopNav from "./components/TopNav";
 import LeftNav from './components/left_nav/LeftNav';
@@ -30,7 +30,13 @@ export const App = () => {
 
   const [chats, setChats] = useState(old_chat);
   const [active_chat, setActiveChat] = useState(chats.length);
-  const [isOnline,updateOnline]=useState('genai')
+  const [isOnline,updateOnline]=useState('bot')
+
+
+useEffect(()=>{},[active_chat])
+
+console.log(chats)
+
 
 
 
@@ -44,17 +50,17 @@ export const App = () => {
 
 
   // to add req and res in the chats list
-  const setReqRes = (req, reqk) => {
+  const setReqRes = async(req, reqk) => {
 
     let temp_chats = [...chats];
     if (chats.length === active_chat) temp_chats.push({ id: "ch_" + chats.length, reqs: [], ress: [] });
 
     temp_chats[active_chat].reqs.push(req);
-    temp_chats[active_chat].ress.push(getRes(reqk,isOnline));
+    temp_chats[active_chat].ress.push(await getRes(reqk,isOnline));
 
 
     setChats(temp_chats);
-
+ 
     localStorage.setItem("sbh_chats", JSON.stringify(temp_chats));
 
 
@@ -72,15 +78,15 @@ export const App = () => {
 
 
 const setOnline=()=>{
-
-  if(isOnline==='genai'){
+return;
+ /*  if(isOnline==='genai'){
     updateOnline('bot');
     return "Offline"
   }
   else{
     updateOnline('genai');
     return "Online"
-  }
+  } */
 }
 
 
@@ -90,7 +96,7 @@ const setOnline=()=>{
       <LeftNav chats={chats} createNewChat={createNewChat} setActiveChat={setActiveChat} clearChats={clearChats}></LeftNav>
       <div id="main_page">
         <TopNav setOnline={setOnline} isOnline={isOnline}></TopNav>
-        <ChatPage active_chat={active_chat} chats={chats}></ChatPage>
+        <ChatPage active_chat={active_chat} setChats={setChats} chats={chats}></ChatPage>
 
         <InputBar createNewChat={createNewChat} setReqRes={setReqRes} ></InputBar>
 

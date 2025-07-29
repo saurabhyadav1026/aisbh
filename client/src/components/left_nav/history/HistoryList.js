@@ -10,7 +10,7 @@ export const HistoryList = (props) => {
         {
             props.chats.map((chat,i) => {
                return    <React.Fragment key={i}>
-               <div onClick={() => {props.setActiveChat(i)}}>{chat.id} </div>
+               <div style={{cursor:"pointer"}}onClick={() => {props.setActiveChat(i)}}>{chat.id} </div>
                </React.Fragment>
             }
             )
