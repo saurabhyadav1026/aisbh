@@ -17,7 +17,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEN_API)
 
 const getGenRes=async(prompt)=>{
 let text="";
-  console.log("enter")
+ 
     try {
      
       const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
@@ -27,7 +27,7 @@ let text="";
       
        return text;
     } catch (err) {
-      console.error(err);
+     
    
     }
  
