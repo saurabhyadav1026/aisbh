@@ -1,11 +1,9 @@
-
-import { useEffect,useState } from 'react';
+//import { useEffect,useState } from 'react';
 import {AddAttachmentIcon,LoadingIcon,SendIcon} from './icons';
 
 
-
-
-
+//import getImageText from '../getImageText'
+import {sendToAI, sendToF} from './userProfile/users'
  
 
 
@@ -13,44 +11,26 @@ import {AddAttachmentIcon,LoadingIcon,SendIcon} from './icons';
 
 const InputBar = (props) => {
 
-const [isFetching,setFetching]=useState(false)
 
-useEffect(()=>{
-
-
-
-},[isFetching])
-
-
-useEffect(()=>{
-  if(props.attachment_file!==null){
-document.getElementById("add_file_btn").style='background-image:url("'+props.attachment_file+'"';
-    
-  }
-  else document.getElementById("add_file_btn").style='background-image:none';
- 
-},[props.attachment_file])
 
 
   
-    const send=()=>{
-        if(isFetching){
-            alert("we loading your response pls wait.")
-            return;
-        }
-        setFetching(true);
+    const send=async()=>{
+   console.log('send')     
  const io=document.getElementById("cammand_input");
  const reqk=[];                                     // filtered request key list
  const req=io.value                                 // original input req  string
- req.toLowerCase().split(" ").forEach((r)=> {        
+ req.split(" ").forEach((r)=> {        
     if( r!=="")reqk.push(r)                           // to remove trail of white space
  });                                                //   and store the split word in list req
 
  if(reqk.length===0&&props.attachment_file===null)return;          // return if blank input
-
- props.setReqRes(req,reqk.join(" "));
- io.value="";                   // to clear the input bar
-    setFetching(false);
+console.log("ggggg")
+ if(props.activeChat.includes('sbhai'))await sendToAI(props.activeUser,props.activeChat,req);
+else await sendToF(props.activeUser,props.activeChat,req)
+ console.log("yeee baat")
+io.value="";                   // to clear the input bar
+   props.updateChatChatList();
 }
 
 
@@ -62,7 +42,7 @@ document.getElementById("add_file_btn").style='background-image:url("'+props.att
         if((!e.shiftKey)&&(e.key==='Enter'))send();
         if(((e.shiftKey)&&(e.key==='n'))||((e.shiftKey)&&(e.key==='N'))){
             document.getElementById("cammand_input").value="";
-            props.createNewChat();
+           // props.createNewChat();
         
         }
     }
@@ -70,12 +50,37 @@ document.getElementById("add_file_btn").style='background-image:url("'+props.att
 
 
     const getAttachmentInput=(e)=>{
-props.addAttachmentFile(URL.createObjectURL(e.target.files[0]));
+//props.addAttachmentFile(URL.createObjectURL(e.target.files[0]));
     }
 
+ // to add req and res in the chats list   
+  
+  /*
+  const [attachment_file, addAttachmentFile] = useState(null);
+
+  const getAIRes = async (req) => {
+    let res = "";
+    let attachment_data="";
+
+    if (attachment_file !== null) {
+      const file = attachment_file;
+
+      addAttachmentFile(null);
+      attachment_data = await getImageText(file); 
+      addAttachmentFile(null);
+
+      if (attachment_data !== "") {
+        res = " Your image text is: " + attachment_data+ " and we get that: ";
+       
+      }
+    } 
+    sendtoAI(props.activeUser,props.activeChat,req);
+  }
+
+*/
 
 
-
+if(props.activeChat===null) return <></>
 
     return (
         <>

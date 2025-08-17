@@ -29,7 +29,8 @@ const leftNavControl=()=>{
 
     <div id="top_nav_bar">
 <span > <h1 onClick={()=>leftNavControl()}style={{height:"100%",width:"100%"}}> =</h1></span>
-<span > <h6 onClick={()=>props.setOnline()}style={{color:"green",height:"100%",width:"100%"}}>{props.isOnline}</h6></span>
+<span id="tell_load"></span>
+<span > <h6 style={{color:"green",height:"100%",width:"100%"}}>{props.isOnline}</h6></span>
 <span><h2 style={{display:"inline"}}>SBH CHATBOT  <BotIcon></BotIcon></h2> </span>
 
 

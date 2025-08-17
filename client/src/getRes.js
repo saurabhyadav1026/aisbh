@@ -1,16 +1,18 @@
 
 
 
-const getRes=async(req,isOnline)=>{
+const getRes=async(req)=>{
 
-    const responser=process.env.REACT_APP_API_KEY+'/sbh/'+isOnline+'?reqq='+req||"";
+
+   const isOnline='bot'
+    const responser=process.env.REACT_APP_API_KEY+'/sbh/'+isOnline+'?req='+req||"";
  
 
     try{
 
 const response=await fetch(responser);
 const data=await response.json();
-return data.sbh;
+return data.value;
 
     }
     catch(error){

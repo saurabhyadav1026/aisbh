@@ -1,16 +1,16 @@
 
 
+'use client';
+import React from "react";
 
-import React from "react"
 
-export const HistoryList = (props) => {
-
+export const HistoryList =(props) => {
     return <>
 
         {
-            props.chats.map((chat,i) => {
-               return    <React.Fragment key={i}>
-               <div style={{cursor:"pointer"}}onClick={() => {props.setActiveChat(i)}}>{chat.id} </div>
+            props.chatsList.map((u,i) => {
+                             return    <React.Fragment key={i}>
+               <div style={{cursor:"pointer"}}onClick={() => {props.setActiveChat(u['username'])}}>{u['name']} </div>
                </React.Fragment>
             }
             )

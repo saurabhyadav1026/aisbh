@@ -1,6 +1,6 @@
 
 
-import requestes from '../training/t2.js';
+import requestes from '../training/t1.js';
  
  
  

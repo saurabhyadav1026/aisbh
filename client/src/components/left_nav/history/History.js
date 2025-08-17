@@ -1,5 +1,5 @@
 
-import { HistoryIcon, ClearHistoryIcon } from '../../icons';
+import { HistoryIcon} from '../../icons';
 
 
 
@@ -15,12 +15,10 @@ const history = (props) => {
                 <div className="left_nav_bar">
                     <div className="left_option" style={{ paddingBottom: '10px', display: 'flex', width: '100%' }}>
                         <h3 style={{ width: '80%' }}>History</h3>
-                        {/*   <!-- clear history btn --> */}
-                        <span  ><ClearHistoryIcon func={props.clearChats}></ClearHistoryIcon></span>
-                    </div>
+                      </div>
                     {/*  <!-- list of chats  --> */}
                     <div id="history_list_bar" style={{ width: '100%', display: 'flex', flexDirection:"column-reverse" }}>
-<HistoryList setActiveChat={props.setActiveChat} chats={props.chats}></HistoryList>
+                    <HistoryList chatsList={props.chatsList} setActiveChat={props.setActiveChat} ></HistoryList>
                     </div>
                 </div>
             </div>

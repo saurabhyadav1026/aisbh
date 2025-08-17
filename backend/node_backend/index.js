@@ -3,8 +3,10 @@ import  cors from 'cors';
 import dotenv from 'dotenv'
 
 
+
+import usersRout from './users/usersRout.js'
+import connectDB from './db/db.js';
 import getBotRes from './controll/getBotRes.js';
-import getGenRes from './controll/getGenRes.js';
 
 
 
@@ -17,24 +19,23 @@ import getGenRes from './controll/getGenRes.js';
 const app=express();
 app.use(cors());
 app.use(express.json());
-
-
-
-
+await connectDB(); 
 
 // middleware
+
+
+
+
+
+app.use('/users',usersRout)
+
 app.get('/sbh/bot',(req,res)=>{
-    res.json({sbh:getBotRes(req.query.reqq)})
+  res.json({value:getBotRes(req.query.req)})
 })
 
- app.get('/sbh/genai',async (req,res)=>{
-    
-    console.log("hhh")
-    res.json({sbh:await getGenRes(req.query.reqq)})
-})
+
 
 
 // start server 
 const port=process.env.PORT || 5000;
 app.listen(port)
-
