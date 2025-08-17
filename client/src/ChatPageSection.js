@@ -43,7 +43,7 @@ const reloadeInterval=setInterval(async()=>{
 
 useEffect(()=>{
 updateChatChatList();
-},[isReloade])
+},[isReloade,updateChatChatList])
 
 
 
