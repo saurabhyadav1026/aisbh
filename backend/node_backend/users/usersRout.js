@@ -23,10 +23,14 @@ usersRoute.get('/newchat',async(req,res)=>{
 
 const us=await User.findOne({username:req.query.activeuser})
 const c=us.chats;
+const unread=us.unread;
 if(req.query.activechat.includes('sbhai')) c[req.query.activechat]={name:req.query.activechat,reqs:[],ress:[]};
-else if(c[req.query.activechat]){}
-else  c[req.query.activechat]=[];
-await User.updateOne({username:req.query.activeuser},{$set:{chats:c}})
+else if(c[req.query.activechat]){}      // for if already have chat with acitivechat
+else {
+   c[req.query.activechat]=[];
+   unread[req.query.activechat]=0;
+}
+await User.updateOne({username:req.query.activeuser},{$set:{chats:c,unread:unread}})
  res.json({value:"done"})
 
 });
@@ -48,12 +52,12 @@ const chats=Object.keys(us['chats']);
 let chat_list=[];
 for (let i=0;i< chats.length;i++){
 
-    if(chats[i].includes('sbhai'))chat_list.push({username:chats[i],name:us['chats'][chats[i]].name})
+    if(chats[i].includes('sbhai'))chat_list.push({username:chats[i],name:us['chats'][chats[i]].name,unread:0})
         else {
      let name=await User.findOne({username:chats[i]})
      name=name.name;
     
-          chat_list.push({username:chats[i],name:name})
+          chat_list.push({username:chats[i],name:name,unread:us['unread'][chats[i]]})
         }
 }
 res.json({value:chat_list});
@@ -71,6 +75,14 @@ usersRoute.get('/getname',async(req,res)=>{
 
    const u=await User.findOne({username:req.query.username})
     res.json({value:u['name']});
+
+})
+
+
+usersRoute.get('/getisreloade',async(req,res)=>{
+
+   const u=await User.findOne({username:req.query.username})
+    res.json({value:u['isReloade']});
 
 })
 
@@ -138,17 +150,17 @@ usersRoute.get('/sendtofriend',async(req,res)=>{
 
       const user1=await User.findOne({username:req.query.activeuser})    
     const c1=user1['chats'];    
-    c1[req.query.activechat].push({time:"22",by:1,text:req.query.text});
+    c1[req.query.activechat].push({time:"22",by:1,text:req.query.text,status:0});
     await User.updateOne({username:req.query.activeuser},{$set:{chats:c1}})
     if(!(req.query.activeuser===req.query.activechat)){
-       console.log("dekh rha hai vinod")
     const user2=await User.findOne({username:req.query.activechat})
-    const c2=user2['chats'];
-    if(!c2[req.query.activeuser])c2[req.query.activeuser]=[{time:"22",by:2,text:req.query.text}]
-    else c2[req.query.activeuser].push({time:"22",by:2,text:req.query.text});
-  
+
+    if(!user2['chats'][req.query.activeuser])user2['chats'][req.query.activeuser]=[{time:"22",by:2,text:req.query.text}]
+    else user2['chats'][req.query.activeuser].push({time:"22",by:2,text:req.query.text});
+  if(!user2['unread'][req.query.activeuser])user2['unread'][req.query.activeuser]=1
+    else user2['unread'][req.query.activeuser]=user2['unread'][req.query.activeuser]+1
     
-    await User.updateOne({username:req.query.activechat},{$set:{chats:c2}})
+    await User.updateOne({username:req.query.activechat},{$set:{chats:c2,isReloade:true}})
         }    res.json({value:"done"})
 
 })

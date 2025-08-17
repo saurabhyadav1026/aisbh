@@ -1,5 +1,5 @@
 //import { useEffect,useState } from 'react';
-import {AddAttachmentIcon,LoadingIcon,SendIcon} from './icons';
+import {RegenerateBtn,LoadingIcon,SendIcon} from './icons';
 
 
 //import getImageText from '../getImageText'
@@ -16,20 +16,19 @@ const InputBar = (props) => {
 
   
     const send=async()=>{
-   console.log('send')     
  const io=document.getElementById("cammand_input");
  const reqk=[];                                     // filtered request key list
  const req=io.value                                 // original input req  string
+ 
+io.value="";                   // to clear the input bar
+
  req.split(" ").forEach((r)=> {        
     if( r!=="")reqk.push(r)                           // to remove trail of white space
  });                                                //   and store the split word in list req
 
- if(reqk.length===0&&props.attachment_file===null)return;          // return if blank input
-console.log("ggggg")
+ if(reqk.length===0)return;          // return if blank input
  if(props.activeChat.includes('sbhai'))await sendToAI(props.activeUser,props.activeChat,req);
 else await sendToF(props.activeUser,props.activeChat,req)
- console.log("yeee baat")
-io.value="";                   // to clear the input bar
    props.updateChatChatList();
 }
 
@@ -49,9 +48,9 @@ io.value="";                   // to clear the input bar
 
 
 
-    const getAttachmentInput=(e)=>{
+ //   const getAttachmentInput=(e)=>{
 //props.addAttachmentFile(URL.createObjectURL(e.target.files[0]));
-    }
+  //  }
 
  // to add req and res in the chats list   
   
@@ -87,9 +86,9 @@ if(props.activeChat===null) return <></>
 
             <div id="text_input_bar">
                 
-                <input id="add_attachment" style={{display:"none"}} type="file" accept="image/*" onChange={getAttachmentInput} />
+                <input id="add_attachment" style={{display:"none"}} type="file" accept="image/*"  />
 {/* <!-- add attachment btn --> */}
-              <div id="add_file_btn"><AddAttachmentIcon func={()=>document.getElementById("add_attachment").click()}></AddAttachmentIcon></div>
+              <div id="add_file_btn"><RegenerateBtn func={props.updateChatChatList}></RegenerateBtn></div>
              
                 {/*  intput area  */}
                 <input id="cammand_input" onKeyUp={(key)=>{keyFunctions(key)}} placeholder="Enter here.."/> 

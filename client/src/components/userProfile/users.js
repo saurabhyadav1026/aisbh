@@ -22,9 +22,12 @@ export const addUser=async(n,u,p,c)=>{
     name:n,
     userpassword:p,
     contact:c,
-    chats:{}    
+    chats:{},  
+    unread:{},
+    isReloade:false  
 }
-user['chats'][u]=[{time:"11",by:1,text:"my name is "+n}]
+user['chats'][u]=[{time:"11",by:1,text:"my name is "+n,status:"3" }]
+user['unread'][u]=0;
 
 try{
 await axios.post(responser+'/newuser',user);
@@ -37,7 +40,8 @@ await axios.post(responser+'/newuser',user);
 const sbhunk={
     username:'sbhunk',
     name:'unknown',
-      chats:{}    
+      chats:{}   
+
 
 }
 
@@ -106,6 +110,14 @@ export const getName=async(user)=>{
 }
 
 
+export const getIsReloade=async(username)=>{
+let is_reloade={value:false}
+   try {const res=await fetch(responser+'/getisreloade?username='+username)
+    is_reloade= await res.json()
+    }catch{}
+    return is_reloade.value;
+}
+
 export const searchFriend=async(activeuser,s_input)=>{
 let friends={value:[]}
    try {const res=await fetch(responser+'/searchfriend?activeuser='+activeuser+'&&input='+s_input)
@@ -122,7 +134,7 @@ export const getChat=async(activeuser,activechat)=>{
     let chat=[];  
     if(activechat===null)return chat;
     if(activeuser==='sbhunk'){
-        sbhunk['chats'][activechat.toString()]['reqs'].forEach((r,i)=>{
+        sbhunk['chats'][activechat]['reqs'].forEach((r,i)=>{
             let rr=sbhunk['chats'][activechat]['ress'][i]
             chat.push({by:1,text:r},{by:2,text:rr})
          

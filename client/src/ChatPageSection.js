@@ -4,8 +4,7 @@ import TopNav from "./components/TopNav";
 import LeftNav from './components/left_nav/LeftNav';
 import ChatPage from './components/ChatPage';
 import InputBar from './components/InputBar';
-import { getChat } from "./components/userProfile/users";
-import { getChatList } from "./components/userProfile/users";
+import { getChat,getChatList,getIsReloade } from "./components/userProfile/users";
 export const ChatPageSection = (props) => {
 
 
@@ -13,34 +12,52 @@ export const ChatPageSection = (props) => {
 
 
 
-  const [activeChat, setActiveChat] = useState(null);
+  const [activeChat, setActiveChat] = useState({username:null,name:null});
 
   const [chatsList, setChatList] = useState([]);
 
   const [chat, setchat] = useState([]);
+
+  const [isReloade,setIsReloade]=useState(false);
+
+  useEffect(()=>{
+const reloadeInterval=setInterval(async()=>{
+ const  is_reloade=await getIsReloade(props.activeUser);
+ setIsReloade(is_reloade)
+},1000)
+    return ()=>clearInterval(reloadeInterval)
+  },[])
 
 
 
 
 
   const updateChatChatList = async () => {
-    let c = await getChat(props.activeUser, activeChat);
+    let c = await getChat(props.activeUser, activeChat.username);
      let c_list = await getChatList(props.activeUser);
     setchat(c)
     setChatList(c_list);
    
   }
+
+
+useEffect(()=>{
+updateChatChatList();
+},[isReloade])
+
 
 
   useEffect(() => {
-    const updateChatChatList = async () => {
-    let c = await getChat(props.activeUser, activeChat);
+ //   const updateChatChatList = setInterval(async () => {
+       const updateChatChatList = async () => {
+    let c = await getChat(props.activeUser, activeChat.username);
      let c_list = await getChatList(props.activeUser);
     setchat(c)
     setChatList(c_list);
    
-  }
+  } //,1000)
     updateChatChatList();
+  return;// ()=>clearInterval(updateChatChatList);
   
   }, [activeChat, props.activeUser]);
 
@@ -55,10 +72,10 @@ export const ChatPageSection = (props) => {
     <>
       <LeftNav chatsList={chatsList} activeUser={props.activeUser} setPage={props.setPage} setActiveChat={setActiveChat} ></LeftNav>
       <div id="main_page">
-        <TopNav ></TopNav>
-        <ChatPage chat={chat} activeChat={activeChat} activeUser={props.activeUser}></ChatPage>
+        <TopNav activeChat={activeChat.name}></TopNav>
+        <ChatPage chat={chat} activeChat={activeChat.username} activeUser={props.activeUser}></ChatPage>
 
-        <InputBar updateChatChatList={updateChatChatList} activeChat={activeChat} activeUser={props.activeUser} ></InputBar>
+        <InputBar updateChatChatList={updateChatChatList} activeChat={activeChat.username} activeUser={props.activeUser} ></InputBar>
 
 
       </div>

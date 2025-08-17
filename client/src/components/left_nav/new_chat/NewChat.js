@@ -1,19 +1,14 @@
 
 
-import { useEffect ,useState} from 'react';
+import { useState} from 'react';
 import { NewChatIcon } from '../../icons';
 
 import SearchedFriendList from './SearchedFriendList'
 
-import { new_chat } from '../../userProfile/users';
+import { getName, new_chat } from '../../userProfile/users';
 
-const NewChat=(props)=>{
-    
-    useEffect(()=>{
-
-   // createChat();
+const NewChat=(props)=>{    
    
-    },[])
 
 
     const createNewFChat=()=>{
@@ -29,12 +24,13 @@ document.getElementById("new_chat_op2").style='visibility:visible;';
   
 }
 
-const searchF=()=>{
+const searchF=async()=>{
   document.getElementById("new_chat_op2").style='visibility:hidden;';  
- const f=document.getElementById('search_input');
-   new_chat(props.activeUser,f.value) 
-   props.setActiveChat(f.value)
-   f.value=''
+ const s_input=document.getElementById('search_input');
+   new_chat(props.activeUser,s_input.value) 
+   const u_name=await getName(s_input.value)
+   props.setActiveChat({username:s_input.value,name:u_name})
+   s_input.value=''
   
 }
 
@@ -45,7 +41,7 @@ const [t,setT]=useState(0)
   const createNewAIChat = async() => {
     document.getElementById("new_chat_op1").style='visibility:hidden;';
     await new_chat(props.activeUser,"sbhai"+t)  
-    props.setActiveChat("sbhai"+t.toString())
+    props.setActiveChat({username:"sbhai"+t.toString(),name:"sbhai"+t.toString()})
     const x=t;
     setT(x+1);
 

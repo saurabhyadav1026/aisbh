@@ -9,7 +9,11 @@ const userSchema= new mongoose.Schema(
     userpassword:String,
     contact:String, 
     chats:{ 
-     }
+     },
+     unread:{
+
+     },
+     isReloade:Boolean
     
     
 }
