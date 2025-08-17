@@ -26,7 +26,7 @@ const reloadeInterval=setInterval(async()=>{
  setIsReloade(is_reloade)
 },1000)
     return ()=>clearInterval(reloadeInterval)
-  },[])
+  },[props.activeUser])
 
 
 
