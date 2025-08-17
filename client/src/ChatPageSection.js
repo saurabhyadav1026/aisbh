@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import TopNav from "./components/TopNav";
 import LeftNav from './components/left_nav/LeftNav';
@@ -32,13 +32,13 @@ const reloadeInterval=setInterval(async()=>{
 
 
 
-  const updateChatChatList = async () => {
+  const updateChatChatList = useCallback(async () => {
     let c = await getChat(props.activeUser, activeChat.username);
      let c_list = await getChatList(props.activeUser);
     setchat(c)
     setChatList(c_list);
    
-  }
+  },[props.activeUser,activeChat])
 
 
 useEffect(()=>{
