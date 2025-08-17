@@ -154,14 +154,16 @@ usersRoute.get('/sendtofriend',async(req,res)=>{
     await User.updateOne({username:req.query.activeuser},{$set:{chats:c1}})
     if(!(req.query.activeuser===req.query.activechat)){
     const user2=await User.findOne({username:req.query.activechat})
-
-    if(!user2['chats'][req.query.activeuser])user2['chats'][req.query.activeuser]=[{time:"22",by:2,text:req.query.text}]
-    else user2['chats'][req.query.activeuser].push({time:"22",by:2,text:req.query.text});
-  if(!user2['unread'][req.query.activeuser])user2['unread'][req.query.activeuser]=1
-    else user2['unread'][req.query.activeuser]=user2['unread'][req.query.activeuser]+1
-    
+     const c2=user2['chats'];    
+console.log(11)
+    if(!user2['chats'][req.query.activeuser])c2=[{time:"22",by:2,text:req.query.text}]
+    else c2.push({time:"22",by:2,text:req.query.text});
+  user2['unread'][req.query.activeuser]+=1
+      console.log(12)
     await User.updateOne({username:req.query.activechat},{$set:{chats:c2,isReloade:true}})
-        }    res.json({value:"done"})
+        }    
+       console.log("okkkkk") 
+        res.json({value:"done"})
 
 })
 
