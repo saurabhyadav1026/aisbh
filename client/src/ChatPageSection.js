@@ -23,7 +23,7 @@ export const ChatPageSection = (props) => {
   useEffect(()=>{
 const reloadeInterval=setInterval(async()=>{
  const  is_reloade=await getIsReloade(props.activeUser);
- setIsReloade(is_reloade)
+ if(!(isReloade===is_reloade)) setIsReloade(is_reloade)
 },1000)
     return ()=>clearInterval(reloadeInterval)
   },[props.activeUser])
@@ -43,7 +43,7 @@ const reloadeInterval=setInterval(async()=>{
 
 useEffect(()=>{
 updateChatChatList();
-},[isReloade,updateChatChatList])
+},[updateChatChatList])
 
 
 
