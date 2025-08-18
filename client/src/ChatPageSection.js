@@ -38,12 +38,12 @@ const reloadeInterval=setInterval(async()=>{
     setchat(c)
     setChatList(c_list);
     reloaded(props.activeUser);
-  },[isReloade,props.activeUser,activeChat])
+  },[props.activeUser,activeChat])
 
 
 useEffect(()=>{
 updateChatChatList();
-},[updateChatChatList])
+},[isReloade,updateChatChatList])
 
 
 
