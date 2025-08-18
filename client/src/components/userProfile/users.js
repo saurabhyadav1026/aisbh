@@ -82,7 +82,9 @@ return rr;
 }
 
 
-
+export const reloaded=async(username)=>{
+    await fetch(responser+'/reloaded?username='+username)
+}
 
 export const getChatList=async(u)=>{
 let chat_list=[]
@@ -111,9 +113,10 @@ export const getName=async(user)=>{
 
 
 export const getIsReloade=async(username)=>{
-let is_reloade={value:false}
+    if(username==='sbhunk')return false;
+    let is_reloade={value:false}
    try {const res=await fetch(responser+'/getisreloade?username='+username)
-    is_reloade= await res.json()
+        is_reloade= await res.json()
     }catch{}
     return is_reloade.value;
 }

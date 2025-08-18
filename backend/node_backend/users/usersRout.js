@@ -54,9 +54,7 @@ for (let i=0;i< chats.length;i++){
 
     if(chats[i].includes('sbhai'))chat_list.push({username:chats[i],name:us['chats'][chats[i]].name,unread:0})
         else {
-     let name=await User.findOne({username:chats[i]})
-     name=name.name;
-    
+     let name=await getName(chats[i])
           chat_list.push({username:chats[i],name:name,unread:us['unread'][chats[i]]})
         }
 }
@@ -66,15 +64,18 @@ res.json({value:chat_list});
 
 
   
-
+const getName=async(username)=>{
+const u =await User.findOne({username:username})
+return u['name'];
+}
 
 
 
 
 usersRoute.get('/getname',async(req,res)=>{
 
-   const u=await User.findOne({username:req.query.username})
-    res.json({value:u['name']});
+   const u=await getName(req.query.username)
+    res.json({value:u});
 
 })
 
@@ -83,7 +84,6 @@ usersRoute.get('/getisreloade',async(req,res)=>{
 
    const u=await User.findOne({username:req.query.username})
     res.json({value:u['isReloade']});
-
 })
 
 
@@ -149,27 +149,28 @@ usersRoute.get('/sendtoai',async (req,res)=>{
 usersRoute.get('/sendtofriend',async(req,res)=>{
 
       const user1=await User.findOne({username:req.query.activeuser})    
-    const c1=user1['chats'];    
+    let c1=user1['chats'];    
     c1[req.query.activechat].push({time:"22",by:1,text:req.query.text,status:0});
     await User.updateOne({username:req.query.activeuser},{$set:{chats:c1}})
     if(!(req.query.activeuser===req.query.activechat)){
     const user2=await User.findOne({username:req.query.activechat})
-     const c2=user2['chats'];    
-console.log(11)
-    if(!user2['chats'][req.query.activeuser])c2=[{time:"22",by:2,text:req.query.text}]
-    else c2.push({time:"22",by:2,text:req.query.text});
-  user2['unread'][req.query.activeuser]+=1
-      console.log(12)
+     let c2=user2['chats'];    
+    if(!user2['chats'][req.query.activeuser])c2[req.query.activeuser]=[{time:"22",by:2,text:req.query.text}]
+    else c2[req.query.activeuser].push({time:"22",by:2,text:req.query.text});
+  user2['unread'][req.query.activeuser]=+1
+  
     await User.updateOne({username:req.query.activechat},{$set:{chats:c2,isReloade:true}})
         }    
-       console.log("okkkkk") 
         res.json({value:"done"})
 
 })
 
 
 
-
+usersRoute.get('/reloaded',async(req,res)=>{
+  await User.updateOne({username:req.query.username},{$set:{isReloade:false}})
+res.json({})
+})
 
 
 export default usersRoute

@@ -4,7 +4,7 @@ import TopNav from "./components/TopNav";
 import LeftNav from './components/left_nav/LeftNav';
 import ChatPage from './components/ChatPage';
 import InputBar from './components/InputBar';
-import { getChat,getChatList,getIsReloade } from "./components/userProfile/users";
+import { getChat,getChatList,getIsReloade ,reloaded} from "./components/userProfile/users";
 export const ChatPageSection = (props) => {
 
 
@@ -37,8 +37,8 @@ const reloadeInterval=setInterval(async()=>{
      let c_list = await getChatList(props.activeUser);
     setchat(c)
     setChatList(c_list);
-   
-  },[props.activeUser,activeChat])
+    reloaded(props.activeUser);
+  },[isReloade,props.activeUser,activeChat])
 
 
 useEffect(()=>{

@@ -1,11 +1,20 @@
 
 import ReqShow from "./ReqShow";
 import ResShow from "./ResShow";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+
+
 const ChatPage = (props) => {
 
 
+const chatPageRef=useRef(null);
 
+useEffect(()=>{
+  const div_ref=chatPageRef.current
+    if(chatPageRef){
+    div_ref.scrollTop=div_ref.scrollHeight
+  }
+},[props.chat])
 
  
   
@@ -16,10 +25,10 @@ const ChatPage = (props) => {
   
  
  
- if (props.activeChat === null) return <div id="chat_page">select chat to view</div>
+ if (props.activeChat === null) return <div className="scrollbar-only-rod" ref={chatPageRef} id="chat_page">select chat to view</div>
 
-else if (props.chat === null) return <div id="chat_page"></div>
-    return <div id="chat_page">{
+else if (props.chat === null) return <div className="scrollbar-only-rod" ref={chatPageRef} id="chat_page"></div>
+    return <div className="scrollbar-only-rod"   ref={chatPageRef} id="chat_page">{
      
        props.chat.map((u, i) => {
             return <React.Fragment key={i}>

@@ -16,7 +16,7 @@ const Friend=(props)=>{
                                                         
                           </div>
                           {/*  <!-- list of chats  --> */}
-                          <div id="Friends_list_bar" style={{ width: '100%', display: 'flex', flexDirection:"column-reverse" }}>
+                          <div id="Friends_list_bar" className="scrollbar-only-rod" style={{ width: '100%', display: 'flex', flexDirection:"column-reverse" }}>
       
       <FriendsList setActiveChat={props.setActiveChat} chats={props.chats}></FriendsList>
                           </div>
