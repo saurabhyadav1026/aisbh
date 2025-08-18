@@ -1,7 +1,7 @@
 
 
 import { useState } from 'react';
-import {Dislike,Copy,LikeRes,RegenerateBtn,SpeakerIcon} from './icons'
+import {Dislike,Copy,LikeRes,SpeakerIcon} from './icons'
 /* 
 props 
         req_
@@ -14,11 +14,7 @@ const ResShow=(props)=>{
 
 const [isSpeak,setSpeak]=useState(false);
 
-  const regenrateRes=(r)=>{
-   props.setChats([...props.chats]);
-
-    }
-
+  
     
 const speakRes=(r)=>{
 
@@ -57,22 +53,19 @@ return;
                     {props.res_}
                 </div>
 
-                <div className="res_option">
+                <div style={{visibility:'hidden'}} className="res_option">
 
                   <span><SpeakerIcon func={speakRes} r_no={props.r_no}></SpeakerIcon></span>
 
-                   {/*  <!--  copy btn --> */}
+                
                     <span><Copy func={copyRes} r_no={props.r_no} ></Copy></span>
 
-                  {/*       <!--  like btn --> */}
+                  
                     <span><LikeRes func={likeRes} r_no={props.r_no}></LikeRes></span>
 
-                     {/*    <!-- dislike btn --> */}
+                  
                     <span><Dislike func={dislikeRes}  r_no={props.r_no} ></Dislike></span>
 
-
-                      {/*   <!-- regenerate btn --> */}
-                    <span><RegenerateBtn func={regenrateRes}  r_no={props.r_no}></RegenerateBtn></span>
 
                 </div>
 

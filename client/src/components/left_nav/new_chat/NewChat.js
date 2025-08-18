@@ -1,6 +1,6 @@
 
 
-import { useState} from 'react';
+import { useEffect, useState} from 'react';
 import { NewChatIcon } from '../../icons';
 
 import SearchedFriendList from './SearchedFriendList'
@@ -19,7 +19,6 @@ const searchF=async()=>{
     return;}
 
  const s_input=document.getElementById('search_input');
-   new_chat(props.activeUser,s_input.value) 
    const s_List=await getSearchList(s_input.value)
    setSearchList(s_List)
    s_input.value='';
@@ -27,20 +26,22 @@ const searchF=async()=>{
 }
 
 
+useEffect(()=>{
+  console.log("nnnnnnn")
+  setSearchList([])
+},[props.setActiveChat])
+
+
 
 const [t,setT]=useState(0)
 
   const createNewAIChat = async() => {
-    document.getElementById("new_chat_op1").style='visibility:hidden;';
     await new_chat(props.activeUser,"sbhai"+t)  
     props.setActiveChat({username:"sbhai"+t.toString(),name:"sbhai"+t.toString()})
     const x=t;
     setT(x+1);
 
   }
-
-  console.log(props.searchList)
-  
     return (
         <>
            
@@ -52,10 +53,9 @@ const [t,setT]=useState(0)
         <div  className="left_option"  >
             <h3 >New Chat</h3>
         </div>
-         <div id="new_chat_op2"><input type="search" id="search_input"></input><button onClick={searchF}>Search</button>
-              <div id="new_chat_op1" >
-                 <button onClick={()=>createNewAIChat()}>AI</button>
-        </div>
+        <div><button style={{width:'100%'}} onClick={()=>createNewAIChat()}>chat with AI</button></div>
+         <div id="new_chat_op2"><input style={{width:'80%'}} type="search" placeholder='search your friends...' id="search_input" onKeyUp={(key)=>{if(key.key==='Enter')searchF()}}></input><button style={{width:'20%'}} onClick={searchF}>Search</button>
+              
        <SearchedFriendList searchList={searchList}  setActiveChat={props.setActiveChat}></SearchedFriendList>
        </div>
     </div>

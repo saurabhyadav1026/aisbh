@@ -13,16 +13,28 @@ const [isUsernameAvailble,setIsAvailbleUsername]=useState(false);
 const [OTP,setotp]=useState({otp_code:null,otp:null})
   
 
+const [isReadOnly,setIsReadOnly]=useState(false)
+
+const [User,setUser]=useState({name:"",username:"",userpassword:'', confirm_password:'',email:''})
+
+const updateUser=(e)=>{
+    const {name,value}=e.target;
+setUser({...User,[name]:value})
+}
+
+
+
 const sendOtp=async ()=>{
 
     checkUsername();
 if(!isUsernameAvailble){
     alert("Username is not availble. Try other username.")
     return;}
-    const mail=document.getElementById("contact_input").value;
-const new_otp= await getOtp(mail);
+    console.log(User)
+const new_otp= await getOtp(User.email);
 if(new_otp.status==='ok'){
-    alert("We have send the otp on your register contact. otp code is : "+OTP.otp_code);
+    setIsReadOnly(true)
+    alert("We have send the otp on your register contact. otp code is : "+new_otp.otp_code);
     setotp(new_otp);
         document.getElementById('otp_verify_div').style='visibility:visible';
   }
@@ -32,9 +44,7 @@ if(new_otp.status==='ok'){
 
 
     const resendOtp=async()=>{
-       const mail=document.getElementById("contact_input").value;
-    const new_otp= await getOtp(mail);
-    console.log(new_otp);
+    const new_otp= await getOtp(User.email);
 if(new_otp.status==='ok'){
     alert("We have resend the otp on your register contact. otp code is : "+new_otp.otp_code);
     setotp(new_otp);
@@ -61,20 +71,14 @@ if(!isUsernameAvailble){
       const  otp_=document.getElementById("otp_input");
 const      otp=otp_.value;
  otp_.value="";
- if(OTP.otp==otp){
-    
+ if(OTP.otp.toString()!==otp){    
     alert("incorrect OTP  "+otp);
     console.log(OTP)
     return;
  }
  else{
 
-   const n=document.getElementById('name_input').value;
-   const us=document.getElementById('us_input').value;
-   const ps=document.getElementById('new_ps_input').value;
-   const c=document.getElementById("contact_input").value;
-    
- await  addUser(n,us,ps,c)
+ await  addUser(User)
 
 
 
@@ -85,9 +89,9 @@ const      otp=otp_.value;
 
     }
 const checkUsername=async()=>{
- const us=document.getElementById('us_input').value;
- const isUA=await checkIsUsernameAvailble(us);
- if(us.trim()!==''&&isUA){
+    console.log(User)
+ const isUA=await checkIsUsernameAvailble(User.username);
+ if(User.username.trim()!==''&&isUA){
 setIsAvailbleUsername(true);
  }
  else setIsAvailbleUsername(false)
@@ -105,19 +109,19 @@ return<>
 </div>
 
 <div>
-    <span>Name</span><input id='name_input'  required />
+    <span>Name</span><input name='name' onChange={updateUser} readOnly={isReadOnly}   value={User.name}  required />
 </div>
 <div>
-    <span>Username</span><input id="us_input" required /><button onClick={checkUsername}  style={{color:'blue'}}>check</button><UserNameAvailble value={isUsernameAvailble}></UserNameAvailble>
+    <span>Username</span><input name='username' onChange={updateUser} readOnly={isReadOnly}   value={User.username} required /><button onClick={checkUsername}  style={{color:'blue'}}>check</button><UserNameAvailble value={isUsernameAvailble}></UserNameAvailble>
 </div>
 <div>
-    <span>Password :</span><input type="password" id='new_ps_input' required></input>
+    <span>Password :</span><input name='userpassword' onChange={updateUser} readOnly={isReadOnly}  type="password" value={User.userpassword} required></input>
 </div>
 <div>
-    <span>Confirm Password :</span><input type="password" id="ps_confirm_input"></input>
+    <span>Confirm Password :</span><input name='confirm_password' onChange={updateUser} readOnly={isReadOnly}   type="password" value={User.confirm_password} required></input>
 </div>
 <div>
-    <span>Email id :</span><input id="contact_input" type='email'required></input>
+    <span>Email id :</span><input name='email' onChange={updateUser} readOnly={isReadOnly}   value={User.email} type='email' required></input>
 </div>
 <div>
     <button onClick={sendOtp}>Send OTP</button>

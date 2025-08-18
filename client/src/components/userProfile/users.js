@@ -15,19 +15,19 @@ import axios from 'axios'
 import getRes from '../../getRes';
 
 const responser=process.env.REACT_APP_API_KEY+'/users';
-export const addUser=async(n,u,p,c)=>{
+export const addUser=async(u)=>{
 
     const user={
-    username:u,
-    name:n,
-    userpassword:p,
-    contact:c,
+    username:u.username,
+    name:u.name,
+    userpassword:u.userpassword,
+    contact:u.email,
     chats:{},  
     unread:{},
     isReloade:false  
 }
-user['chats'][u]=[{time:"11",by:1,text:"my name is "+n,status:"3" }]
-user['unread'][u]=0;
+user['chats'][u.username]=[{time:"11",by:1,text:"Hello!  "+u.username,status:"3" }]
+user['unread'][u.username]=0;
 
 try{
 await axios.post(responser+'/newuser',user);
@@ -83,7 +83,12 @@ return rr;
 
 
 export const reloaded=async(username)=>{
-    await fetch(responser+'/reloaded?username='+username)
+  try{  await fetch(responser+'/reloaded?username='+username)
+
+}catch{
+    alert("check your internet connection.")
+}
+
 }
 
 export const getChatList=async(u)=>{
@@ -101,6 +106,8 @@ return chat_list;
 }
 
 export const getName=async(user)=>{
+    console.log("abhi dekh rha")
+    console.log(user)
     if(user.includes('sbhunk'))return 'unknown';
     let name='unknown'
      try{ let res=await fetch(responser+'/getname?username='+user)
@@ -181,7 +188,6 @@ export const sendToF=async(activeuser,activechat,text)=>{
 export const getSearchList=async(input)=>{
 
     const res=await fetch(responser+'/getsearchlist?input='+input);
-    console.log(res)
     let list=await res.json()
     return list.value;
 
@@ -191,7 +197,5 @@ export const getSearchList=async(input)=>{
 export const getOtp=async (mail)=>{
     const res= await fetch(responser+'/getotp?mail='+mail);
     let otp=await res.json();
-    console.log('otttpppp');
-    console.log(otp)
     return otp;    
 }

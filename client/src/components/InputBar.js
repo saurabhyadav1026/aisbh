@@ -41,7 +41,7 @@ else await sendToF(props.activeUser,props.activeChat,req)
         if((!e.shiftKey)&&(e.key==='Enter'))send();
         if(((e.shiftKey)&&(e.key==='n'))||((e.shiftKey)&&(e.key==='N'))){
             document.getElementById("cammand_input").value="";
-           // props.createNewChat();
+            //props.createAINewChat();
         
         }
     }

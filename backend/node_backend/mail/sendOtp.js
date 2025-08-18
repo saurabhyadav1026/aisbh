@@ -40,11 +40,11 @@ export default sendOtp;
 
 
 const createOtpCode=()=>{
- let otp_code=1234;
+ let otp_code=Math.floor(Math.random()*99999);
     return otp_code;
 }
 
 const createOTP=()=>{
-    let otp=4321;
+    let otp=Math.floor(Math.random()*999999);
     return otp;
 }

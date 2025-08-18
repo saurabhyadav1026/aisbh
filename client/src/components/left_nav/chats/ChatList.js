@@ -4,7 +4,7 @@
 import React from "react";
 
 
-export const HistoryList =(props) => {
+export const ChatList =(props) => {
     return <>
 
         {
@@ -19,4 +19,4 @@ export const HistoryList =(props) => {
     </>
 }
 
-export default HistoryList;
+export default ChatList;

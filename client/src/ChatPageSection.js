@@ -47,30 +47,15 @@ updateChatChatList();
 
 
 
-  useEffect(() => {
- //   const updateChatChatList = setInterval(async () => {
-       const updateChatChatList = async () => {
-    let c = await getChat(props.activeUser, activeChat.username);
-     let c_list = await getChatList(props.activeUser);
-    setchat(c)
-    setChatList(c_list);
-   
-  } //,1000)
-    updateChatChatList();
-  return;// ()=>clearInterval(updateChatChatList);
-  
-  }, [activeChat, props.activeUser]);
 
 
-
-
-
+ console.log(chatsList)
 
 
   return (
 
     <>
-      <LeftNav chatsList={chatsList} activeUser={props.activeUser} setPage={props.setPage} setActiveChat={setActiveChat} ></LeftNav>
+      <LeftNav activeChat={activeChat.username}  chatsList={chatsList} activeUser={props.activeUser} setPage={props.setPage} setActiveChat={setActiveChat} ></LeftNav>
       <div id="main_page">
         <TopNav activeChat={activeChat.name}></TopNav>
         <ChatPage chat={chat} activeChat={activeChat.username} activeUser={props.activeUser}></ChatPage>

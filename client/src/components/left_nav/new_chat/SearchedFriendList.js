@@ -2,8 +2,6 @@
   import React from "react"
 
 const SearchedFriendsList=(props)=>{
-
-    console.log(props.searchList)
 return <>
 
         {

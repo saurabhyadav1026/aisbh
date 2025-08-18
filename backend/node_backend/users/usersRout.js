@@ -50,10 +50,12 @@ usersRoute.get('/getchatslist', async (req, res) => {
   const us = await User.findOne({ username: req.query.activeuser });
   const chats = Object.keys(us['chats']);
   let chat_list = [];
+  console.log(chats)
   for (let i = 0; i < chats.length; i++) {
 
     if (chats[i].includes('sbhai')) chat_list.push({ username: chats[i], name: us['chats'][chats[i]].name, unread: 0 })
     else {
+  console.log("sss   "+chats[i])
       let name = await getName(chats[i])
       chat_list.push({ username: chats[i], name: name, unread: us['unread'][chats[i]] })
     }
@@ -65,7 +67,9 @@ usersRoute.get('/getchatslist', async (req, res) => {
 
 
 const getName = async (username) => {
+  console.log("hello "+username)
   const u = await User.findOne({ username: username })
+//console.log(u)
   return u['name'];
 }
 
@@ -153,9 +157,13 @@ usersRoute.get('/sendtofriend', async (req, res) => {
 
   const user1 = await User.findOne({ username: req.query.activeuser })
   let c1 = user1['chats'];
-  c1[req.query.activechat].push({ time: "22", by: 1, text: req.query.text, status: 0 });
+  if(c1[req.query.activechat])c1[req.query.activechat].push({ time: "22", by: 1, text: req.query.text, status: 0 });
+ else c1[req.query.activechat]={ time: "22", by: 1, text: req.query.text, status: 0 };
+ 
+ 
+ 
   await User.updateOne({ username: req.query.activeuser }, { $set: { chats: c1 } })
-  if (!(req.query.activeuser === req.query.activechat)) {
+    if (!(req.query.activeuser === req.query.activechat)) {
     const user2 = await User.findOne({ username: req.query.activechat })
     let c2 = user2['chats'];
     if (!user2['chats'][req.query.activeuser]) c2[req.query.activeuser] = [{ time: "22", by: 2, text: req.query.text }]

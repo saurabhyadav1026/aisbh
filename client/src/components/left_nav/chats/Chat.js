@@ -1,24 +1,24 @@
 
-import { HistoryIcon} from '../../icons';
+import { ChatIcon} from '../../icons';
 
 
 
-import HistoryList from './HistoryList'
+import ChatList from './ChatList'
 
-const history = (props) => {
+const Chat = (props) => {
     return (
         <>
             <div id="left_nav_center" className="left_bar">
                 <div className="left_nav_icons">
-                    <div id="history_icon"><HistoryIcon></HistoryIcon></div>
+                    <div id="chat_icon"><ChatIcon></ChatIcon></div>
                 </div>
                 <div className="left_nav_bar">
                     <div className="left_option" style={{ paddingBottom: '10px', display: 'flex', width: '100%' }}>
-                        <h3 style={{ width: '80%' }}>History</h3>
+                        <h3 style={{ width: '80%' }}>Chat</h3>
                       </div>
                     {/*  <!-- list of chats  --> */}
                     <div id="history_list_bar" className="scrollbar-only-rod" style={{ width: '100%', display: 'flex', flexDirection:"column-reverse" }}>
-                    <HistoryList chatsList={props.chatsList} setActiveChat={props.setActiveChat} ></HistoryList>
+                    <ChatList chatsList={props.chatsList} setActiveChat={props.setActiveChat} ></ChatList>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@ const history = (props) => {
     );
 }
 
-export default history;
+export default Chat;
 
 
 
