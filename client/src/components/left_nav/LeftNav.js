@@ -2,16 +2,11 @@
 import Profile from './account/ProfileBar';
 import Logo from './bot_logo/Logo';
 import NewChat from './new_chat/NewChat';
-import Chat from './chats/Chat';
+import Chat from './chatbar/Chat';
 import OtherSetting from './other/Settings';
 
 
 const LeftNav=(props)=>{
-
-
-
-    console.log(props.chatsList)
-  
 
 return (
 <>

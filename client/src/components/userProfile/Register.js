@@ -19,6 +19,7 @@ const [User,setUser]=useState({name:"",username:"",userpassword:'', confirm_pass
 
 const updateUser=(e)=>{
     const {name,value}=e.target;
+    
 setUser({...User,[name]:value})
 }
 
@@ -30,7 +31,6 @@ const sendOtp=async ()=>{
 if(!isUsernameAvailble){
     alert("Username is not availble. Try other username.")
     return;}
-    console.log(User)
 const new_otp= await getOtp(User.email);
 if(new_otp.status==='ok'){
     setIsReadOnly(true)
@@ -64,7 +64,7 @@ document.getElementById("otp_input").value=""
 
 
     const verifyRegisterDetail=async()=>{
-        checkUsername();
+        
 if(!isUsernameAvailble){
     alert("Username is not availble. Try other username.")
     return;}
@@ -73,7 +73,6 @@ const      otp=otp_.value;
  otp_.value="";
  if(OTP.otp.toString()!==otp){    
     alert("incorrect OTP  "+otp);
-    console.log(OTP)
     return;
  }
  else{
@@ -89,12 +88,14 @@ const      otp=otp_.value;
 
     }
 const checkUsername=async()=>{
-    console.log(User)
  const isUA=await checkIsUsernameAvailble(User.username);
  if(User.username.trim()!==''&&isUA){
 setIsAvailbleUsername(true);
+
  }
- else setIsAvailbleUsername(false)
+ else setIsAvailbleUsername(false);
+ 
+
 }
 
 
@@ -112,7 +113,7 @@ return<>
     <span>Name</span><input name='name' onChange={updateUser} readOnly={isReadOnly}   value={User.name}  required />
 </div>
 <div>
-    <span>Username</span><input name='username' onChange={updateUser} readOnly={isReadOnly}   value={User.username} required /><button onClick={checkUsername}  style={{color:'blue'}}>check</button><UserNameAvailble value={isUsernameAvailble}></UserNameAvailble>
+    <span>Username</span><input name='username' onKeyUp={checkUsername} onChange={updateUser} readOnly={isReadOnly}   value={User.username} required /><button onClick={checkUsername}  style={{color:'blue'}}>check</button><UserNameAvailble value={isUsernameAvailble}></UserNameAvailble>
 </div>
 <div>
     <span>Password :</span><input name='userpassword' onChange={updateUser} readOnly={isReadOnly}  type="password" value={User.userpassword} required></input>

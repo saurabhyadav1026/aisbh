@@ -48,10 +48,6 @@ updateChatChatList();
 
 
 
-
- console.log(chatsList)
-
-
   return (
 
     <>

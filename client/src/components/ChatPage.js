@@ -23,8 +23,6 @@ useEffect(()=>{
   
   // for new chat page return empty chat page
   
- 
- 
  if (props.activeChat === null) return <div className="scrollbar-only-rod" ref={chatPageRef} id="chat_page">select chat to view</div>
 
 else if (props.chat === null) return <div className="scrollbar-only-rod" ref={chatPageRef} id="chat_page"></div>

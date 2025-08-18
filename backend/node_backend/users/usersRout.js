@@ -50,12 +50,10 @@ usersRoute.get('/getchatslist', async (req, res) => {
   const us = await User.findOne({ username: req.query.activeuser });
   const chats = Object.keys(us['chats']);
   let chat_list = [];
-  console.log(chats)
   for (let i = 0; i < chats.length; i++) {
 
     if (chats[i].includes('sbhai')) chat_list.push({ username: chats[i], name: us['chats'][chats[i]].name, unread: 0 })
     else {
-  console.log("sss   "+chats[i])
       let name = await getName(chats[i])
       chat_list.push({ username: chats[i], name: name, unread: us['unread'][chats[i]] })
     }
@@ -67,9 +65,7 @@ usersRoute.get('/getchatslist', async (req, res) => {
 
 
 const getName = async (username) => {
-  console.log("hello "+username)
   const u = await User.findOne({ username: username })
-//console.log(u)
   return u['name'];
 }
 
@@ -121,6 +117,7 @@ usersRoute.get('/getsearchlist', async (req, res) => {
 usersRoute.get('/getchat', async (req, res) => {
   let chat = [];
   const user = await User.findOne({ username: req.query.activeuser })
+  
   if (req.query.activechat.includes('sbhai')) {
     user['chats'][req.query.activechat.toString()]['reqs'].forEach((r, i) => {
       let rr = user['chats'][req.query.activechat]['ress'][i]
@@ -129,7 +126,7 @@ usersRoute.get('/getchat', async (req, res) => {
     }
     )
   }
-  else chat = user['chats'][req.query.activechat]
+  else if(user['chats'][req.query.activechat])chat = user['chats'][req.query.activechat]
 
   res.json({ value: chat });
 
@@ -158,7 +155,7 @@ usersRoute.get('/sendtofriend', async (req, res) => {
   const user1 = await User.findOne({ username: req.query.activeuser })
   let c1 = user1['chats'];
   if(c1[req.query.activechat])c1[req.query.activechat].push({ time: "22", by: 1, text: req.query.text, status: 0 });
- else c1[req.query.activechat]={ time: "22", by: 1, text: req.query.text, status: 0 };
+ else c1[req.query.activechat]=[{ time: "22", by: 1, text: req.query.text, status: 0 }];
  
  
  

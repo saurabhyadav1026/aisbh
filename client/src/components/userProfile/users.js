@@ -32,7 +32,7 @@ user['unread'][u.username]=0;
 try{
 await axios.post(responser+'/newuser',user);
   }
-    catch(error){
+    catch(error){alert("failed to connect with server")
     }
 }
 
@@ -47,10 +47,10 @@ const sbhunk={
 
 
 export const checkIsUsernameAvailble=async(username)=>{
-
-    let res=await fetch(responser+'/checkisusernameavailble?username='+username);
+let res
+    try{res=await fetch(responser+'/checkisusernameavailble?username='+username);
     res=await res.json();
-    res=res.value;
+    res=res.value;}catch{alert("failed to connect with server")}
     return res;
 }
 
@@ -62,7 +62,7 @@ if(activeuser.includes('sbhunk')){
 }
     else try{
       await fetch(responser+'/newchat?activeuser='+activeuser+'&&activechat='+activechat)
-    }catch{}
+    }catch{alert("failed to connect with server")}
     
     
     }
@@ -76,7 +76,7 @@ export const verifyUser=async(username,userpassword)=>{
     try  {let res=await fetch(responser+'/verifyuser?username='+username+'&&userpassword='+userpassword)
         res=await res.json();
         rr=res.value;
-    }catch(e){}
+    }catch(e){alert("failed to connect with server")}
 return rr;
 
 }
@@ -85,8 +85,7 @@ return rr;
 export const reloaded=async(username)=>{
   try{  await fetch(responser+'/reloaded?username='+username)
 
-}catch{
-    alert("check your internet connection.")
+}catch{alert("failed to connect with server")
 }
 
 }
@@ -101,20 +100,18 @@ chat_list.push({username:x,name:sbhunk['chats'][x]['name']})
 }else try{
 let res=await fetch(responser+'/getchatslist?activeuser='+u)
  res= await res.json();
- chat_list=res.value}catch{}
+ chat_list=res.value}catch{ alert("failed to connect with server")}
 return chat_list;
 }
 
 export const getName=async(user)=>{
-    console.log("abhi dekh rha")
-    console.log(user)
     if(user.includes('sbhunk'))return 'unknown';
     let name='unknown'
      try{ let res=await fetch(responser+'/getname?username='+user)
    
      res= await res.json()
        name=res.value}
-       catch{}
+       catch{alert("failed to connect with server")}
        return name;
 }
 
@@ -124,7 +121,7 @@ export const getIsReloade=async(username)=>{
     let is_reloade={value:false}
    try {const res=await fetch(responser+'/getisreloade?username='+username)
         is_reloade= await res.json()
-    }catch{}
+    }catch{alert("failed to connect with server")}
     return is_reloade.value;
 }
 
@@ -132,7 +129,7 @@ export const searchFriend=async(activeuser,s_input)=>{
 let friends={value:[]}
    try {const res=await fetch(responser+'/searchfriend?activeuser='+activeuser+'&&input='+s_input)
     friends= await res.json()
-    }catch{}
+    }catch{alert("failed to connect with server")}
     return friends.value;
 
 }
@@ -155,7 +152,7 @@ else{
      const res=await fetch(responser+'/getchat?activeuser='+activeuser+'&&activechat='+activechat)
      chat= await res.json();
      chat=chat.value
-   }catch{}
+   }catch{alert("failed to connect with server")}
  } 
  
  return chat;
@@ -172,30 +169,33 @@ export const sendToAI=async(activeuser,activechat,req)=>{
 else try    {
     await fetch(responser+'/sendtoai?activeuser='+activeuser+'&&activechat='+activechat+'&&req='+req)
 
-}catch(e){}
+}catch(e){alert("failed to connect with server")}
 }
 
 
 
 
 export const sendToF=async(activeuser,activechat,text)=>{
-      await fetch(responser+'/sendtofriend?activeuser='+activeuser+'&&activechat='+activechat+'&&text='+text)
- 
+     try{ await fetch(responser+'/sendtofriend?activeuser='+activeuser+'&&activechat='+activechat+'&&text='+text)
+ }catch{alert("failed to connect with server")}
 }
 
 
 
 export const getSearchList=async(input)=>{
-
-    const res=await fetch(responser+'/getsearchlist?input='+input);
-    let list=await res.json()
+let list={value:[]}
+   try{ const res=await fetch(responser+'/getsearchlist?input='+input);
+     list=await res.json()
+    }
+     catch{alert("failed to connect with server")}
     return list.value;
 
 }
 
 
 export const getOtp=async (mail)=>{
-    const res= await fetch(responser+'/getotp?mail='+mail);
-    let otp=await res.json();
+    let otp={status:'bad'};
+   try{ const res= await fetch(responser+'/getotp?mail='+mail);
+     otp=await res.json();}catch{alert("failed to connect with server")}
     return otp;    
 }

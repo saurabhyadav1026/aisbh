@@ -9,7 +9,7 @@ import App from './App'
 
 
 
-/* 
+
 console.log = () => {};
 console.warn = () => {};
 console.error = () => {};
@@ -17,7 +17,7 @@ window.onerror = ()=> {
   return true; // prevents showing any error in console
 };
 
- */
+
 
 
 

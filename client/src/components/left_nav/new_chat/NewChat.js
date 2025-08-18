@@ -27,7 +27,6 @@ const searchF=async()=>{
 
 
 useEffect(()=>{
-  console.log("nnnnnnn")
   setSearchList([])
 },[props.setActiveChat])
 
