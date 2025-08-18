@@ -178,3 +178,20 @@ export const sendToF=async(activeuser,activechat,text)=>{
 
 
 
+export const getSearchList=async(input)=>{
+
+    const res=await fetch(responser+'/getsearchlist?input='+input);
+    console.log(res)
+    let list=await res.json()
+    return list.value;
+
+}
+
+
+export const getOtp=async (mail)=>{
+    const res= await fetch(responser+'/getotp?mail='+mail);
+    let otp=await res.json();
+    console.log('otttpppp');
+    console.log(otp)
+    return otp;    
+}

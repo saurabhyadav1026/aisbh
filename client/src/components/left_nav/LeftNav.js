@@ -5,12 +5,16 @@ import NewChat from './new_chat/NewChat';
 import History from './history/History';
 import OtherSetting from './other/Settings';
 import Friends from './friends/Friends';
+import { useState } from 'react';
 
 
 
 const LeftNav=(props)=>{
 
+
+
     
+  
 
 return (
 <>
@@ -19,8 +23,8 @@ return (
 
 <Logo></Logo> 
 <Profile isLoggin={props.isLoggin} activeUser={props.activeUser} setPage={props.setPage}></Profile>
-<Friends activeUser={props.activeUser}></Friends>
-<NewChat activeUser={props.activeUser} setActiveChat={props.setActiveChat} createNewAIChat={props.createNewAIChat}></NewChat>
+<Friends  setActiveChat={props.setActiveChat} activeUser={props.activeUser}></Friends>
+<NewChat   activeUser={props.activeUser} setActiveChat={props.setActiveChat} createNewAIChat={props.createNewAIChat}></NewChat>
 <History chatsList={props.chatsList}  setActiveChat={props.setActiveChat}  clearChats={props.clearChats}></History>
 <OtherSetting activeUser={props.activeUser} />
 

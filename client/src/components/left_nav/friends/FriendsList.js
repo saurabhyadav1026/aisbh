@@ -1,11 +1,10 @@
 
+const FriendsList=()=>{
 
-const FriendsList=(props)=>{
+    
+return <>
 
-return<>
-
-
-</>
+    </>
 
 }
 

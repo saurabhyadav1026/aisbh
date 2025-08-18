@@ -1,14 +1,23 @@
 
+  import React from "react"
 
+const SearchedFriendsList=(props)=>{
 
-const SearchedFriendList=(props)=>{
+    console.log(props.searchList)
+return <>
 
-return<>
+        {
+            props.searchList.map((u,i) => {
+                             return    <React.Fragment key={i}>
+               <div style={{cursor:"pointer"}}onClick={() => {props.setActiveChat(u)}}>{u['name']} </div>
+               </React.Fragment>
+            }
+            )
 
-
-</>
+        }
+    </>
 
 }
 
 
-export default SearchedFriendList;
+export default SearchedFriendsList;

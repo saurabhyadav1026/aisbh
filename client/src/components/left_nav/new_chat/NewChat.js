@@ -5,32 +5,24 @@ import { NewChatIcon } from '../../icons';
 
 import SearchedFriendList from './SearchedFriendList'
 
-import { getName, new_chat } from '../../userProfile/users';
+import { getSearchList, new_chat } from '../../userProfile/users';
 
 const NewChat=(props)=>{    
    
+const [searchList,setSearchList]=useState([])
 
-
-    const createNewFChat=()=>{
-        
-document.getElementById("new_chat_op1").style='visibility:hidden;';
-
-if(props.activeUser==='sbhunk'){
-    alert("need to logg in");
-    return;
-}
-
-document.getElementById("new_chat_op2").style='visibility:visible;';
-  
-}
-
+   
 const searchF=async()=>{
-  document.getElementById("new_chat_op2").style='visibility:hidden;';  
+
+  if(props.activeUser==='sbhunk'){
+    alert("need to loggin");
+    return;}
+
  const s_input=document.getElementById('search_input');
    new_chat(props.activeUser,s_input.value) 
-   const u_name=await getName(s_input.value)
-   props.setActiveChat({username:s_input.value,name:u_name})
-   s_input.value=''
+   const s_List=await getSearchList(s_input.value)
+   setSearchList(s_List)
+   s_input.value='';
   
 }
 
@@ -46,23 +38,25 @@ const [t,setT]=useState(0)
     setT(x+1);
 
   }
+
+  console.log(props.searchList)
   
     return (
         <>
            
         <div  className="left_bar"> 
     <div className="left_nav_icons">
-        <div id="new_chat_icon"  ><NewChatIcon func={createNewChat}></NewChatIcon> </div>
+        <div id="new_chat_icon"  ><NewChatIcon ></NewChatIcon> </div>
     </div>
     <div className="left_nav_bar">
-        <div  onClick={()=>createNewChat()} className="left_option"  >
+        <div  className="left_option"  >
             <h3 >New Chat</h3>
         </div>
-        <div id="new_chat_op1" style={{visibility:'hidden'}}><button onClick={()=>createNewFChat()}>Friend</button>
-        <button onClick={()=>createNewAIChat()}>AI</button>
+         <div id="new_chat_op2"><input type="search" id="search_input"></input><button onClick={searchF}>Search</button>
+              <div id="new_chat_op1" >
+                 <button onClick={()=>createNewAIChat()}>AI</button>
         </div>
-       <div id="new_chat_op2" style={{visibility:'hidden'}}><input type="search" id="search_input"></input><button onClick={searchF}>Search</button>
-       <SearchedFriendList></SearchedFriendList>
+       <SearchedFriendList searchList={searchList}  setActiveChat={props.setActiveChat}></SearchedFriendList>
        </div>
     </div>
 
@@ -73,11 +67,6 @@ const [t,setT]=useState(0)
 
 export default NewChat;
 
-const createNewChat=()=>{
-
-    
-document.getElementById("new_chat_op1").style='visibility:visible;';
-}
 
 
 
