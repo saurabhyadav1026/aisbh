@@ -19,11 +19,10 @@ const otp_mail={
 }
 
  sender.sendMail(otp_mail,(err,info)=>{
-    if(err){console.log(err);
+    if(err){
         res.json({otp_code:null,otp:null,status:'bad'})
     }
-       else{ console.log("send") ;
-    
+       else{
  res.json({otp_code:otp_code,otp:OTP,status:'ok'})
     }
 })

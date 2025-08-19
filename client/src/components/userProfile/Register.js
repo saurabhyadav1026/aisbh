@@ -35,7 +35,6 @@ if(!isUsernameAvailble){
         return;
     }
 const new_otp= await getOtp(User.email);
-alert(new_otp )
 if(new_otp.status==='no_get')return;
 else if(new_otp.status==='ok'){
     setIsReadOnly(true)
@@ -45,7 +44,6 @@ else if(new_otp.status==='ok'){
   }
   else {alert("Enetr correct mail id")
 
-    console(new_otp)
   }
 
     }
@@ -62,7 +60,6 @@ else if(new_otp.status==='ok'){
   else {
     
     alert("Enetr correct mail id")}
-    console.log(new_otp)
 
     }
 

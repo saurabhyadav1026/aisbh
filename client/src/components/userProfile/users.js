@@ -187,7 +187,7 @@ let list;
 
 export const getOtp=async (mail)=>{
     let otp={status:'not_get'};
-   try{ const res= await fetch(responser+'/getotp?mail='+mail);
+   try{ const res= await fetch(responser+'/getotp?email='+mail);
      otp=await res.json();}catch{alert("check your internet connection or try agail later.")}
     return otp;    
 }

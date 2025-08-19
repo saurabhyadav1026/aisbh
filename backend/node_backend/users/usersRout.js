@@ -184,7 +184,7 @@ usersRoute.get('/reloaded', async (req, res) => {
 
 usersRoute.get('/getotp',async(req,res)=>{
 
-await sendOtp(req.query.mail,res)
+await sendOtp(req.query.email,res)
 
 });
 
