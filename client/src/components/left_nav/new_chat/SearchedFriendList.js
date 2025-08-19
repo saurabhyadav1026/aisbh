@@ -7,7 +7,7 @@ return <>
         {
             props.searchList.map((u,i) => {
                              return    <React.Fragment key={i}>
-               <div style={{cursor:"pointer"}}onClick={() => {props.setActiveChat(u)}}>{u['name']} </div>
+               <div className="listshow" style={{cursor:"pointer"}}onClick={() => {props.setActiveChat(u)}}>{u['name']} </div>
                </React.Fragment>
             }
             )

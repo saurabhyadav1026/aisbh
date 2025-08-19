@@ -17,7 +17,7 @@ const Chat = (props) => {
                         <h3 style={{ width: '80%' }}>Chat</h3>
                       </div>
                     {/*  <!-- list of chats  --> */}
-                    <div id="history_list_bar" className="scrollbar-only-rod" style={{ width: '100%', display: 'flex', flexDirection:"column-reverse" }}>
+                    <div id="chat_list_bar" className="scrollbar-only-rod" >
                     <ChatList chatsList={props.chatsList} setActiveChat={props.setActiveChat} ></ChatList>
                     </div>
                 </div>

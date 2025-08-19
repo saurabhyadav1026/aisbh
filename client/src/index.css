@@ -51,6 +51,7 @@ flex-direction: column;
 
 #chat_page{
   position: relative;
+  padding:3%;
   width: 100%;
   height: 75%;
   overflow-y: scroll;
@@ -122,8 +123,8 @@ padding-left: 5%;
   background-color: rgb(255, 255, 255);
   width: 80%;
   left: 10%;
-height: 5%;
-border-radius: 10%;
+height: 60px;
+border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,15 +152,69 @@ text-wrap: wrap;
 line-height: 20px;
 }
 
+.req,.res{
+  
+  width:100%; 
+  display: flex;
+  margin-top: 4px;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.res_output,.req_cammand{
+  height:50px;
+  border-radius: 25px;
+  padding:15px;
+  display: flex;
+  margin: 4px;
+  font-weight: bold;
+
+}
+.res_output{
+background-color: antiquewhite;
+}
+.req_cammand{
+  background-color: rgb(138, 187, 129);
+}
+
+#chat_list_bar,#search_list_bar{
+  width: 100%;
+   display:flex;
+   flex-direction:column-reverse;
+   padding: 0; 
+   overflow: none;
+}
+
+.listshow{
+
+  border:3 px solid red;
+  background-color: aqua;
+  margin-top:4px;
+  margin-left: 5px;
+  padding:5px;
+  padding-left: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+
+
+
+.res_option,.req_option{
+margin:4px;   
+height:40px;
+border-radius: 20px;
+border:3px solid red;
+padding: 10px;
+visibility: hidden;
+}
 
 
 .req{
 
-  width:100%; 
-  display: flex;
   align-items: flex-end;
-  flex-direction: column;
   padding-right: 50px;
+
 
 }
 
@@ -171,10 +226,7 @@ text-wrap: wrap;
 
 .res{
 
-  width:100%; 
-  display: flex;
   align-items:right;
-  flex-direction: column;
   padding-left: 50px;
 
 
@@ -277,3 +329,10 @@ background-color: blue;
 
 
 
+@media (max-height:401px) {
+  
+#text_input_bar{
+  height: 10%;
+  background-color: blue;
+}
+}

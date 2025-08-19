@@ -37,7 +37,7 @@ const editReq=(r)=>{
                         </div>
 
 
-                        <div style={{visibility:'hidden'}} className="req_option">
+                        <div className="req_option">
     
                         {/*     <!--  edit btn--> */}
                             <span> <Edit func={editReq}  r_no={props.r_no} ></Edit></span>

@@ -53,7 +53,7 @@ return;
                     {props.res_}
                 </div>
 
-                <div style={{visibility:'hidden'}} className="res_option">
+                <div  className="res_option">
 
                   <span><SpeakerIcon func={speakRes} r_no={props.r_no}></SpeakerIcon></span>
 
