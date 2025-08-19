@@ -55,7 +55,10 @@ else if(new_otp.status==='ok'){
     setotp(new_otp);
        
   }
-  else {alert("Enetr correct mail id")}
+  else {
+    
+    alert("Enetr correct mail id")}
+    console.log(new_otp)
 
     }
 

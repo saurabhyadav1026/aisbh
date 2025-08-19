@@ -143,7 +143,7 @@ else{
      const res=await fetch(responser+'/getchat?activeuser='+activeuser+'&&activechat='+activechat)
      chat= await res.json();
      chat=chat.value
-   }catch{alert("failed to connect with server. Try after some time.")}
+   }catch{}
  } 
  
  return chat||[{by:1,text:'Loading your chat.....'}];
@@ -160,7 +160,7 @@ export const sendToAI=async(activeuser,activechat,req)=>{
 else try    {
     await fetch(responser+'/sendtoai?activeuser='+activeuser+'&&activechat='+activechat+'&&req='+req)
 
-}catch(e){alert("failed to connect with server. Try after some time.")}
+}catch(e){alert("check your internet connection or wait")}
 }
 
 
@@ -168,7 +168,7 @@ else try    {
 
 export const sendToF=async(activeuser,activechat,text)=>{
      try{ await fetch(responser+'/sendtofriend?activeuser='+activeuser+'&&activechat='+activechat+'&&text='+text)
- }catch{alert("failed to connect with server. Try after some time.")}
+ }catch{alert("check you internet connection or wait")}
 }
 
 
@@ -188,6 +188,6 @@ let list;
 export const getOtp=async (mail)=>{
     let otp={status:'not_get'};
    try{ const res= await fetch(responser+'/getotp?mail='+mail);
-     otp=await res.json();}catch{alert("failed to connect with server. Try after some time.")}
+     otp=await res.json();}catch{alert("check your internet connection or try agail later.")}
     return otp;    
 }
