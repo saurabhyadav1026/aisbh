@@ -53,7 +53,7 @@ const [t,setT]=useState(0)
             <h3 >New Chat</h3>
         </div>
         <div><button style={{width:'100%'}} onClick={()=>createNewAIChat()}>chat with AI</button></div>
-         <div id="new_chat_op2"><input style={{width:'80%'}} type="search" placeholder='search your friends...' id="search_input" onKeyUp={(key)=>{if(key.key==='Enter')searchF()}}></input><button style={{width:'20%'}} onClick={searchF}>Search</button>
+         <div id="new_chat_op2"><input style={{width:'70%'}} type="search" placeholder='search your friends...' id="search_input" onKeyUp={(key)=>{if(key.key==='Enter')searchF()}}></input><button style={{width:'30%'}} onClick={searchF}>Search</button>
               
        <SearchedFriendList searchList={searchList}  setActiveChat={props.setActiveChat}></SearchedFriendList>
        </div>

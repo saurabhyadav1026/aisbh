@@ -6,7 +6,7 @@ import dotenv from 'dotenv'
 
 import usersRout from './users/usersRout.js'
 import connectDB from './db/db.js';
-import getBotRes from './controll/getBotRes.js';
+import getGenRes from './controll/getGenRes.js'
 
 
 
@@ -29,8 +29,8 @@ await connectDB();
 
 app.use('/users',usersRout)
 
-app.get('/sbh/bot',(req,res)=>{
-  res.json({value:getBotRes(req.query.req)})
+app.get('/sbh/gen',(req,res)=>{
+  res.json({value:getGenRes(req.query.req)})
 })
 
 

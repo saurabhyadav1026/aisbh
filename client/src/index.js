@@ -27,21 +27,15 @@ window.onerror = ()=> {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
+
   <React.StrictMode>
 
-    <div id="main_content">
 
 
       <App ></App>
 
-    </div>
+  
 
-
-
-    <footer id="footer">
-      <div> @SbhTechHub PRODUCTIONS</div>
-           
-    </footer>
 
   </React.StrictMode>
 );

@@ -4,7 +4,7 @@
 const getRes=async(req)=>{
 
 
-   const isOnline='bot'
+   const isOnline='gen'
     const responser=process.env.REACT_APP_API_KEY+'/sbh/'+isOnline+'?req='+req||"";
  
 

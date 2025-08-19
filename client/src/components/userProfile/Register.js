@@ -27,12 +27,16 @@ setUser({...User,[name]:value})
 
 const sendOtp=async ()=>{
 
-    checkUsername();
 if(!isUsernameAvailble){
     alert("Username is not availble. Try other username.")
     return;}
+    if(User.userpassword!==User.confirm_password){
+        alert("password missmatch");
+        return;
+    }
 const new_otp= await getOtp(User.email);
-if(new_otp.status==='ok'){
+if(new_otp.status==='no_get')return;
+else if(new_otp.status==='ok'){
     setIsReadOnly(true)
     alert("We have send the otp on your register contact. otp code is : "+new_otp.otp_code);
     setotp(new_otp);
@@ -45,7 +49,8 @@ if(new_otp.status==='ok'){
 
     const resendOtp=async()=>{
     const new_otp= await getOtp(User.email);
-if(new_otp.status==='ok'){
+    if(new_otp.status==='not_get')return;
+else if(new_otp.status==='ok'){
     alert("We have resend the otp on your register contact. otp code is : "+new_otp.otp_code);
     setotp(new_otp);
        
@@ -58,29 +63,23 @@ if(new_otp.status==='ok'){
     const edit=()=>{
 document.getElementById("otp_input").value=""
         document.getElementById('otp_verify_div').style+='visibility:hidden';
-
+        setIsReadOnly(false)
 
     }
 
 
     const verifyRegisterDetail=async()=>{
-        
-if(!isUsernameAvailble){
-    alert("Username is not availble. Try other username.")
-    return;}
+
       const  otp_=document.getElementById("otp_input");
 const      otp=otp_.value;
  otp_.value="";
  if(OTP.otp.toString()!==otp){    
-    alert("incorrect OTP  "+otp);
+    alert("Enter correct OTP  ");
     return;
  }
  else{
 
  await  addUser(User)
-
-
-
     props.setProfileSectionPage('log');
     alert("register successfully");
  }

@@ -84,7 +84,7 @@ if(props.activeChat===null) return <></>
     return (
         <>
 
-            <div id="text_input_bar">
+            <div id="text_input_bar" style={props.sty_input}>
                 
                 <input id="add_attachment" style={{display:"none"}} type="file" accept="image/*"  />
 {/* <!-- add attachment btn --> */}

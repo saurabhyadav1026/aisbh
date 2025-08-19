@@ -3,7 +3,7 @@
 
 import express from 'express';
 import { User } from './dbschema.js'
-import getBotRes from '.././controll/getBotRes.js';
+import getGenRes from '.././controll/getGenRes.js';
 
 import sendOtp from '../mail/sendOtp.js';
 
@@ -142,7 +142,7 @@ usersRoute.get('/sendtoai', async (req, res) => {
 
   const c = user['chats'];
   c[req.query.activechat]['reqs'].push(req.query.req);
-  c[req.query.activechat]['ress'].push(getBotRes(req.query.req));
+  c[req.query.activechat]['ress'].push(await getGenRes(req.query.req));
   await User.updateOne({ username: req.query.activeuser }, { $set: { chats: c } })
 
   res.json({ value: "done" })
