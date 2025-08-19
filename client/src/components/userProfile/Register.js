@@ -44,8 +44,8 @@ else if(new_otp.status==='ok'){
         document.getElementById('otp_verify_div').style='visibility:visible';
   }
   else {alert("Enetr correct mail id")
-    alert(User.email)
-    alert(new_otp)
+
+    console(new_otp)
   }
 
     }
@@ -119,7 +119,7 @@ return<>
     <span>Name</span><input name='name' onChange={updateUser} readOnly={isReadOnly}   value={User.name}  required />
 </div>
 <div>
-    <span>Username</span><input name='username' onKeyUp={checkUsername} onChange={updateUser} readOnly={isReadOnly}   value={User.username} required /><button onClick={checkUsername}  style={{color:'blue'}}>check</button><UserNameAvailble value={isUsernameAvailble}></UserNameAvailble>
+    <span>Username</span><input name='username' onKeyUp={checkUsername} onChange={updateUser} readOnly={isReadOnly}   value={User.username} required /><UserNameAvailble value={isUsernameAvailble}></UserNameAvailble>
 </div>
 <div>
     <span>Password :</span><input name='userpassword' onChange={updateUser} readOnly={isReadOnly}  type="password" value={User.userpassword} required></input>
