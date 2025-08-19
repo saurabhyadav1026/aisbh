@@ -30,10 +30,7 @@ return <>
 
 
 </div>
-    <footer id="footer">
-      <div> @SbhTechHub PRODUCTIONS  </div>
-           
-    </footer>
+   
 </>
 
 }
