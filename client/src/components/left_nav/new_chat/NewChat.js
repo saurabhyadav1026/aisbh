@@ -1,6 +1,6 @@
 
 
-import { useEffect, useState} from 'react';
+import {  useState} from 'react';
 import { NewChatIcon } from '../../icons';
 
 import SearchedFriendList from './SearchedFriendList'
@@ -19,16 +19,12 @@ const searchF=async()=>{
     return;}
 
  const s_input=document.getElementById('search_input');
-   const s_List=await getSearchList(s_input.value)
+ if(s_input.value.trim()==="")setSearchList([])
+ else { const s_List=await getSearchList(s_input.value)
    setSearchList(s_List)
-   s_input.value='';
+   }s_input.value='';
   
 }
-
-
-useEffect(()=>{
-  setSearchList([])
-},[props.setActiveChat])
 
 
 

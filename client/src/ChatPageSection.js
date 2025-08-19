@@ -36,14 +36,14 @@ const reloadeInterval=setInterval(async()=>{
 
   const updateChatChatList = useCallback(async () => {
     
-    if(activeChat.name!==null)setNavFlag('B');
+    if(activeChat.name!==null&&nav_flag!=='A')setNavFlag('B');
 
     let c = await getChat(props.activeUser, activeChat.username);
      let c_list = await getChatList(props.activeUser);
     setchat(c)
     setChatList(c_list);
     reloaded(props.activeUser);
-  },[props.activeUser,activeChat])
+  },[props.activeUser,activeChat,nav_flag])
 
 
 useEffect(()=>{
