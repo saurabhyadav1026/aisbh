@@ -188,8 +188,7 @@ background-color: antiquewhite;
 
 .listshow{
 
-  border:3 px solid red;
-  background-color: aqua;
+  background-color: rgb(96, 173, 173);
   margin-top:4px;
   border-radius: 5px;
   margin-left: 5px;
@@ -206,7 +205,6 @@ background-color: antiquewhite;
 margin:4px;   
 height:40px;
 border-radius: 20px;
-border:3px solid red;
 padding: 10px;
 visibility: hidden;
 }
@@ -285,7 +283,6 @@ width: 40%;
 
 
 #text_input_bar{
-  background-color: rgb(255, 255, 255);
   width: 50%;
   left: 45%;
 }
@@ -301,7 +298,6 @@ width: 40%;
 
 #left_nav{
 width: 30%;
-background-color: blue;
 }
 
 .left_nav_icons{
@@ -312,7 +308,6 @@ background-color: blue;
 
 
 #text_input_bar{
-  background-color: rgb(255, 255, 255);
   width: 60%;
   left: 35%;
 }
