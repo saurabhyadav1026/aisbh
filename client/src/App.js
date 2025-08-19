@@ -31,7 +31,7 @@ return <>
 
 </div>
     <footer id="footer">
-      <div> @SbhTechHub PRODUCTIONS   width={window.innerWidth}</div>
+      <div> @SbhTechHub PRODUCTIONS  </div>
            
     </footer>
 </>
