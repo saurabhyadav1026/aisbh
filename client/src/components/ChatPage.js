@@ -2,6 +2,7 @@
 import ReqShow from "./ReqShow";
 import ResShow from "./ResShow";
 import React, { useEffect, useRef } from "react";
+import BlankChatPage from "./userProfile/BlankChatPage";
 
 
 const ChatPage = (props) => {
@@ -23,7 +24,9 @@ useEffect(()=>{
   
   // for new chat page return empty chat page
   
- if (props.activeChat === null) return <div className="scrollbar-only-rod" ref={chatPageRef} id="chat_page">select chat to view</div>
+ if (props.activeChat === null) return <div  ref={chatPageRef} id="chat_page">
+  <BlankChatPage></BlankChatPage>
+  </div>
 
 else if (props.chat === null) return <div className="scrollbar-only-rod" ref={chatPageRef} id="chat_page"></div>
     return <div className="scrollbar-only-rod"   ref={chatPageRef} id="chat_page">{

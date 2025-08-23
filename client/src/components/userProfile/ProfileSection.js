@@ -48,8 +48,8 @@ const logOut=()=>{
 
 return <div id="profile_section" style={sty1}>
 
-<div style={{display:"block",position:'fixed',top:'5%',right:'5%'}}><h1 onClick={()=>props.setPage('ChatPageSection')} style={{color:'white'}}>X</h1></div>
-<div style={sty2}>
+
+<div id="profile_section_div2" >
 
 {profilePage==='log' && <Loggin  activeUser={props.activeUser} setActiveUser={props.setActiveUser} setPage={props.setPage} setProfileSectionPage={setProfileSectionPage}/>}
 {profilePage==='reg'  && <Register   activeUser={props.activeUser} setActiveUser={props.setActiveUser} setPage={props.setPage} setProfileSectionPage={setProfileSectionPage}/>}
@@ -69,15 +69,3 @@ export default ProfileSection;
 
 
 
-const sty2={
-
-    height:'100%',
-width:'450px',
-backgroundColor:'white',
-padding:'30px',
-display:"flex",
-justifyContent:"center",
-flexDirection:'column',
-alignItems:'center'
-
-}
