@@ -51,6 +51,7 @@ return;
                 <div className="res_output">                 
                 {/*     <!-- for ai  response displaying  --> */}
                     {props.res_}
+    <span className='msg_time'><sub> {props.time?props.time.slice(0,5):""}</sub></span>
                 </div>
 
                 <div  className="res_option">

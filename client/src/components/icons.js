@@ -211,3 +211,25 @@ export const LoadingIcon = () => {
 
     return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-loader-circle-icon lucide-loader-circle"><path d="M21 12a9 9 0 1 1-6.219-8.56" /></svg>
 }
+
+
+
+
+export const SingleTickIcon=()=>{
+    return <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft:"5px"}}  width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+}
+
+export const DoubleTickIcon=()=>{
+//import { CheckCheck } from 'lucide-react';
+    return <svg xmlns="http://www.w3.org/2000/svg"  style={{marginLeft:"5px"}} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check-check-icon lucide-check-check"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
+}
+
+export const UnsendIcon=()=>{
+    return <svg xmlns="http://www.w3.org/2000/svg"  style={{marginLeft:"5px"}}  width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-clock-icon lucide-clock"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
+}
+
+
+export const BlueTickIcon=()=>{
+//import { CheckCheck } from 'lucide-react';
+    return <svg xmlns="http://www.w3.org/2000/svg"  style={{marginLeft:"5px",color:"blue"}} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check-check-icon lucide-check-check"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
+}

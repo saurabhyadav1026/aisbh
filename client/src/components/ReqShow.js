@@ -1,5 +1,5 @@
 
-import {Edit,Copy} from './icons'
+import {Edit,Copy,DoubleTickIcon,UnsendIcon,SingleTickIcon, BlueTickIcon} from './icons'
 
 /* 
 props 
@@ -33,6 +33,14 @@ const editReq=(r)=>{
                             
                             {/* <!-- for your cammand displaying --> */}
                             {props.req_}
+   
+        <sub className='msg_time'>
+            {props.time?props.time.slice(0,5):""}
+            
+      {  props.status===0?<UnsendIcon></UnsendIcon>:props.status===1?<SingleTickIcon></SingleTickIcon>:props.status===2?<DoubleTickIcon></DoubleTickIcon>:<BlueTickIcon></BlueTickIcon>    }
+            </sub>
+    
+    
     
                         </div>
 

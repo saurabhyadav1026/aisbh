@@ -9,8 +9,6 @@ friend chat:   usn:[{t:"",by:1|2,text:" "}]
 
 
 */
-import {User} from './dbschema'
-
 
 
 export const getName=(us)=>{
@@ -120,12 +118,9 @@ const get_res=(req)=>{
 
 
 export const savedb=async()=>{
-
-    console.log("hhhhh")
     const db= await connectDB();
     const userss=db.collection('users');
  await userss.insertOne({nam:'sbhydv'})
- console.log("ommfo")
  return 'done'
     //return "GOOD BRO DDDDDDDDDDAAAAASDF" 
 

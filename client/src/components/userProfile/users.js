@@ -32,7 +32,7 @@ user['unread'][u.username]=0;
 try{
 await axios.post(responser+'/newuser',user);
   }
-    catch(error){alert("failed to connect with server. Try after some time.")
+    catch(error){
     }
 }
 
@@ -50,19 +50,19 @@ export const checkIsUsernameAvailble=async(username)=>{
 let res
     try{res=await fetch(responser+'/checkisusernameavailble?username='+username);
     res=await res.json();
-    res=res.value;}catch{alert("failed to connect with server. Try after some time.")}
+    res=res.value;}catch{}
     return res;
 }
 
 
 
-export const new_chat=async(activeuser,activechat)=>{
+export const newChat=async(activeuser,activechat)=>{
 if(activeuser.includes('sbhunk')){
     sbhunk['chats'][activechat]={name:'unknown'+activechat[5],reqs:[],ress:[]}
 }
     else try{
       await fetch(responser+'/newchat?activeuser='+activeuser+'&&activechat='+activechat)
-    }catch{alert("failed to connect with server. Try after some time.")}
+    }catch{}
     
     
     }
@@ -76,7 +76,7 @@ export const verifyUser=async(username,userpassword)=>{
     try  {let res=await fetch(responser+'/verifyuser?username='+username+'&&userpassword='+userpassword)
         res=await res.json();
         rr=res.value;
-    }catch(e){alert("failed to connect with server. Try after some time.")}
+    }catch(e){}
 return rr;
 
 }
@@ -90,6 +90,7 @@ export const reloaded=async(username)=>{
 }
 
 export const getChatList=async(u)=>{
+    //return [{username:'ss',name:'sbh singh.',unread:3}]
 let chat_list=[]
 if(u.includes('sbhunk')){
     
@@ -99,8 +100,8 @@ chat_list.push({username:x,name:sbhunk['chats'][x]['name']})
 }else try{
 let res=await fetch(responser+'/getchatslist?activeuser='+u)
  res= await res.json();
- chat_list=res.value}catch{ alert("failed to connect with server. Try after some time.")}
-return chat_list||[{username:null,name:'Loading....'}];
+ chat_list=res.value}catch{ }
+return chat_list;
 }
 
 export const getName=async(user)=>{
@@ -110,7 +111,7 @@ export const getName=async(user)=>{
    
      res= await res.json()
        name=res.value}
-       catch{alert("failed to connect with server. Try after some time.")}
+       catch{}
        return name||'Loading...';
 }
 
@@ -160,7 +161,7 @@ export const sendToAI=async(activeuser,activechat,req)=>{
 else try    {
     await fetch(responser+'/sendtoai?activeuser='+activeuser+'&&activechat='+activechat+'&&req='+req)
 
-}catch(e){alert("check your internet connection or wait")}
+}catch(e){}
 }
 
 
@@ -168,19 +169,42 @@ else try    {
 
 export const sendToF=async(activeuser,activechat,text)=>{
      try{ await fetch(responser+'/sendtofriend?activeuser='+activeuser+'&&activechat='+activechat+'&&text='+text)
- }catch{alert("check you internet connection or wait")}
+ }catch{}
 }
 
 
 
-export const getSearchList=async(input)=>{
-let list;
+export const getSearchList=async(activeuser,input)=>{
+let list=[];
 
-   try{ const res=await fetch(responser+'/getsearchlist?input='+input);
-     list=await res.json()
-     list=list.value
+// for if user not loggin(only ai chat)
+if(activeuser==='sbhunk'){
+    Object.keys(sbhunk.chats).forEach(u=>{
+        if(sbhunk['chats'].u.name.includes(input))list.push({username:u,name:sbhunk['chats'].u.name})
+    })
+}
+else{   // first show chat result
+const temp_chat=await getChatList(activeuser);
+
+ temp_chat.forEach((x)=>{
+    if(x.username.includes(input)||x.name.includes(input))list.push(x);
+ })
+
+ // then for global search
+const res=await fetch(responser+'/getsearchlist?input='+input);
+    let  temp_chat2=await res.json()
+    temp_chat2=temp_chat2.value;
+    let n=0;
+  for(let i=0;i<temp_chat2.length;i++){
+    let t=temp_chat2[i]['username'];
+    if(t.includes(input)){list.push(temp_chat2[i]);
+        n++;
+        if(n===5)break;
     }
-     catch{}
+  }
+
+}
+
     return list||[{username:null,name:"wait Searching...."}]
 }
 
@@ -188,6 +212,6 @@ let list;
 export const getOtp=async (mail)=>{
     let otp={status:'not_get'};
    try{ const res= await fetch(responser+'/getotp?email='+mail);
-     otp=await res.json();}catch{alert("check your internet connection or try agail later.")}
+     otp=await res.json();}catch{}
     return otp;    
 }

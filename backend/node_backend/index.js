@@ -29,8 +29,9 @@ await connectDB();
 
 app.use('/users',usersRout)
 
-app.get('/sbh/gen',(req,res)=>{
-  res.json({value:getGenRes(req.query.req)})
+app.get('/sbh/gen',async(req,res)=>{
+ let text=await getGenRes(req.query.req)
+  res.json({value:text})
 })
 
 

@@ -12,6 +12,7 @@ const getRes=async(req)=>{
 
 const response=await fetch(responser);
 const data=await response.json();
+console.log(data)
 return data.value;
 
     }

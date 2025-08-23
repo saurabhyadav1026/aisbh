@@ -13,7 +13,8 @@ const [isUsernameAvailble,setIsAvailbleUsername]=useState(false);
 const [OTP,setotp]=useState({otp_code:null,otp:null})
   
 
-const [isReadOnly,setIsReadOnly]=useState(false)
+const [isReadOnly,setIsReadOnly]=useState(false);
+const [otpDivVisibility,setOtpDivVisibility]=useState('none')
 
 const [User,setUser]=useState({name:"",username:"",userpassword:'', confirm_password:'',email:''})
 
@@ -40,7 +41,8 @@ else if(new_otp.status==='ok'){
     setIsReadOnly(true)
     alert("We have send the otp on your register contact. otp code is : "+new_otp.otp_code);
     setotp(new_otp);
-        document.getElementById('otp_verify_div').style='visibility:visible';
+    setOtpDivVisibility(null)
+     
   }
   else {alert("Enetr correct mail id")
 
@@ -66,7 +68,7 @@ else if(new_otp.status==='ok'){
     
     const edit=()=>{
 document.getElementById("otp_input").value=""
-        document.getElementById('otp_verify_div').style+='visibility:hidden';
+      setOtpDivVisibility('none' )
         setIsReadOnly(false)
 
     }
@@ -106,46 +108,48 @@ setIsAvailbleUsername(true);
 
 return<>
 
-
-
-<div>
-    <h1>Register</h1>
-</div>
-
-<div>
-    <span>Name</span><input name='name' onChange={updateUser} readOnly={isReadOnly}   value={User.name}  required />
-</div>
-<div>
-    <span>Username</span><input name='username' onKeyUp={checkUsername} onChange={updateUser} readOnly={isReadOnly}   value={User.username} required /><UserNameAvailble value={isUsernameAvailble}></UserNameAvailble>
-</div>
-<div>
-    <span>Password :</span><input name='userpassword' onChange={updateUser} readOnly={isReadOnly}  type="password" value={User.userpassword} required></input>
-</div>
-<div>
-    <span>Confirm Password :</span><input name='confirm_password' onChange={updateUser} readOnly={isReadOnly}   type="password" value={User.confirm_password} required></input>
-</div>
-<div>
-    <span>Email id :</span><input name='email' onChange={updateUser} readOnly={isReadOnly}   value={User.email} type='email' required></input>
-</div>
-<div>
-    <button onClick={sendOtp}>Send OTP</button>
-</div>
-
-
-<div id='otp_verify_div' style={{backgroundColor:'red',visibility:'hidden',position:'absolute',height:"100%",width:'100%'}}>
-
-<div><span>Enter OTP</span><input type='Number' id="otp_input" required /><span onClick={resendOtp} style={{color:"blue"}} >Resend OTP</span></div>
-<div><button id='otp_verify_btn' onClick={verifyRegisterDetail}>Register</button></div>
-<div>To edit Email/ Contact no. <span onClick={edit} style={{color:'blue'}}>click here</span> </div>
-<div></div>
-
-</div>
-<div><hr/>or loggin with<hr/></div>
-<div style={{display:'flex',alignItems:'center',justifyContent:'space-evenly'}}><span>g</span><span>m</span><span>t</span></div>
+<h2>Register...</h2>
 <hr/>
-<h5>if you have account <span style={{color:'blue'}} onClick={()=>props.setProfileSectionPage('log')}>sign in</span></h5>
+<table>
+    <tbody>
+
+    
 
 
+<tr>
+    <td>Name</td><td><input name='name' onChange={updateUser} readOnly={isReadOnly}   value={User.name}  required /></td>
+</tr>
+<tr>
+    <td>Username</td><td><input name='username' onKeyUp={checkUsername} onChange={updateUser} readOnly={isReadOnly}   value={User.username} required /></td><td><UserNameAvailble value={isUsernameAvailble}></UserNameAvailble></td>
+</tr>
+<tr>
+    <td>Password :</td><td><input name='userpassword' onChange={updateUser} readOnly={isReadOnly}  type="password" value={User.userpassword} required></input></td>
+</tr>
+<tr>
+    <td>Confirm Password :</td><td><input name='confirm_password' onChange={updateUser} readOnly={isReadOnly}   type="password" value={User.confirm_password} required></input></td>
+</tr>
+<tr>
+    <td>Email id :</td><td><input name='email' onChange={updateUser} readOnly={isReadOnly}   value={User.email} type='email' required></input></td>
+</tr>
+<tr>
+   <td style={{display:'flex'}} colSpan={2}> <button style={{alignSelf:'center'}} onClick={sendOtp}>Send OTP</button></td>
+</tr>
+
+{/* 
+<tr id='otp_verify_div' style={{backgroundColor:'red',visibility:'hidden',position:'absolute',height:"100%",width:'100%'}}>
+ */}
+<tr style={{display:otpDivVisibility}}><td>Enter OTP</td><td><input type='Number' id="otp_input" required /></td><td onClick={resendOtp} style={{color:"blue"}} >Resend OTP</td></tr>
+<tr style={{display:otpDivVisibility}}><td colSpan={2}><button style={{width:'90%',borderRadius:'10px'}} id='otp_verify_btn' onClick={verifyRegisterDetail}>Register</button></td></tr>
+<tr style={{display:otpDivVisibility}}><td colSpan={2}>To edit Email/ Contact no. <span onClick={edit} style={{color:'blue'}}>click here</span> </td></tr>
+
+{/* 
+<tr><td colSpan={2}>or loggin with</td></tr>
+<tr><td colSpan={2} style={{display:'flex',alignItems:'center',justifyContent:'space-evenly'}}><span>g</span><span>m</span><span>t</span></td></tr>
+ */}
+<tr><td colSpan={2}>if you have account <span style={{color:'blue'}} onClick={()=>props.setProfileSectionPage('log')}>sign in</span></td></tr>
+
+</tbody>
+</table>
 
 </>    
 
@@ -157,6 +161,6 @@ export default Register;
 
 
 const UserNameAvailble=(props)=>{
-    if(props.value) return <span id="username_availble_status"style={{color:'green'}}>Availble</span>
-    else return <span id="username_availble_status" style={{color:'red'}}>not Availble</span>
+    if(props.value) return <td id="username_availble_status"style={{color:'green'}}>Availble</td>
+    else return <td id="username_availble_status" style={{color:'red'}}>not Availble</td>
 }

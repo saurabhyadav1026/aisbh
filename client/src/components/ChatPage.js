@@ -30,7 +30,8 @@ else if (props.chat === null) return <div className="scrollbar-only-rod" ref={ch
      
        props.chat.map((u, i) => {
             return <React.Fragment key={i}>
-        {u.by=== 1 ? <ReqShow req_={u['text']} r_no={i}> </ReqShow> : <ResShow res_={u['text']} r_no={i}></ResShow>}
+              
+        {u.by=== 1 ? <ReqShow status={u['status']} req_={u['text']} r_no={i} time={u['time']}> </ReqShow> : <ResShow  time={u['time']} res_={u['text']} r_no={i}></ResShow>}
       </React.Fragment>
 
        })

@@ -6,7 +6,14 @@ import { verifyUser } from './users'
 
 
 
+
+
+
 const Loggin=(props)=>{
+
+
+
+
 
 
     const verifyLoggin=async ()=>{
@@ -29,29 +36,39 @@ props.setPage('ChatPageSection')
 
 
 return<>
-<h3>Loggin here...</h3>
 <hr/>
-<br/>
-<div>
-<span>Username:</span><input id='log_usname_input'></input>
-</div>
-<br/>
-<br/>
-<div>
-<span>Password:</span><input type="password" id='log_uspassword_input'></input> 
-</div>
 
-<div>
-<button onClick={verifyLoggin}>Log in</button>
-</div>
-<br/>
-<br/>
-<div>or loggin with<hr/></div>
-<div style={{display:'flex',alignItems:'center',justifyContent:'space-evenly'}}><span>g</span><span>m</span><span>t</span></div>
-<hr/>
-<h5>if don't have account <span style={{color:'blue'}} onClick={()=>props.setProfileSectionPage('reg')}>sign up</span></h5>
+<table style={tabSty}>
+    <tbody>
+<tr>
+<td style={{padding:"10px"}}>Username:</td><td style={{padding:"10px"}}><input style={{width:'100%',height:'100%'}}  id='log_usname_input'></input></td>
+</tr>
+<tr>
+<td style={{padding:"10px"}}>Password:</td><td style={{padding:"10px"}}><input style={{width:'100%',height:'100%'}} type="password" id='log_uspassword_input'></input></td>
+</tr>
+
+<tr>
+<td style={{padding:"10px"}} colSpan={2}><button  style={{width:"100%"}} onClick={verifyLoggin}>Log in</button></td>
+</tr>
+<tr><td style={{padding:"10px"}} colSpan={2}>or loggin witd</td></tr>
+<tr><td style={{padding:"10px"}} colSpan={2}></td></tr>
+
+<tr><td style={{padding:"10px"}} colSpan={2}>if don't have account <span style={{color:'blue'}} onClick={()=>props.setProfileSectionPage('reg')}>sign up</span></td></tr>
+</tbody>
+</table>
+
 </>
  
 }
 
 export default Loggin;
+
+
+
+const tabSty={
+
+   height:'250px',
+   width:'100%',
+    bordeRadius:"10px",
+    border:'10px solid red'
+}

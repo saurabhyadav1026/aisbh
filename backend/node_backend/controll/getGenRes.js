@@ -25,11 +25,9 @@ let text="";
       const result = await model.generateContent(prompt);
        text =  result.response.text();
       console.log('fewrcfgbioued yadav')
-       return text;
-    } catch (err) {
-     
-   
-    }
+      
+    } catch{ }
+     return text;
  
 }
 

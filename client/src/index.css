@@ -84,16 +84,21 @@ padding-left: 5%;
  #left_nav_center{
   
 
-  height: 60%;
+  height: 80%;
 }
 
 #left_nav_top,#left_nav_bottom{
 
   
-  height: 20%;
+  height: 10%;
+}
+#left_nav_top_icon,#left_nav_top{
+  background-color: rgb(43, 242, 175);
 }
 
-
+#logo_bar,#logo_bar_icon{
+  background-color: rgb(88, 244, 192);
+}
 
 .left_nav_icons{
   width: 15%;
@@ -110,7 +115,7 @@ padding-left: 5%;
 
 
 .left_nav_bar{
-  width: 80%;
+  width: 85%;
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -164,8 +169,7 @@ line-height: 20px;
 .res_output,.req_cammand{
   padding:0.4em 1em;
   margin: 4px;
-  font-weight: bold;
-  
+  font-weight: bold;  
 display: inline-block;
 line-height: 1.2em;
 border-radius: 20px;
@@ -178,24 +182,40 @@ background-color: antiquewhite;
   background-color: rgb(138, 187, 129);
 }
 
-#chat_list_bar,#search_list_bar{
+#chat_list_bar{
   width: 100%;
    display:flex;
-   flex-direction:column-reverse;
-   padding: 0; 
-   overflow: none;
+   flex-direction:column;
+   height: 100%;
+   padding: 5px; 
+   overflow-y: scroll;
+   box-sizing: border-box;
 }
+
+#search_block{
+   margin: 5px;
+     bottom: 0;
+     padding: 3px;
+      height: 15% ;
+      margin:0;
+      width:100%
+}
+
 
 .listshow{
 
   background-color: rgb(96, 173, 173);
-  margin-top:4px;
+  margin-top:2px;
   border-radius: 5px;
-  margin-left: 5px;
   padding:5px;
   padding-left: 10px;
   text-align: left;
-  width: 90%;
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
 }
 
 
@@ -210,6 +230,17 @@ visibility: hidden;
 }
 
 
+.msg_time{
+  padding: 5px;
+  align-self: flex-end;
+  margin-left: 20px;
+  padding-right: 10px;;
+  padding-bottom: 0;
+  font-size: smaller;
+  box-sizing: border-box;
+  right: 10px;
+}
+
 .req{
 
   align-items: flex-end;
@@ -221,6 +252,7 @@ visibility: hidden;
  
 max-width: 60%;
 text-wrap: wrap;
+word-wrap: break-word;
 }
 
 .res{

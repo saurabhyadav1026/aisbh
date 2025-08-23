@@ -21,7 +21,7 @@ const Profile=(props)=>{
     return (
         <>
           <div id="left_nav_top" className="left_bar">
-                <div className="left_nav_icons">
+                <div id="left_nav_top_icon" className="left_nav_icons">
                     <div id="profile_icon"><ProfileIcon func={()=>{props.setPage('ProfileSection')}}></ProfileIcon></div>
                     <div></div>
                 </div>
