@@ -53,7 +53,7 @@ const reloadeInterval=setInterval(async()=>{
     setchat(c)
     setChatList(c_list);
     reloaded(props.activeUser);
-  },[props.activeUser,activeChat,nav_flag,searchInput])
+  },[props.activeUser,activeChat,searchInput])
 
 
 useEffect(()=>{
@@ -63,7 +63,7 @@ updateChatChatList();
 
 useEffect(()=>{
   if(activeChat.name!==null&&nav_flag!=='A')setNavFlag('B');
-},[activeChat])
+},[activeChat],nav_flag)
 
 
 
