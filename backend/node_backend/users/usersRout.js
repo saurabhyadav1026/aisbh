@@ -234,7 +234,7 @@ const isUserAvailble = async (username) => {
 
 const getTime=()=>{
   const now=new Date();
-  let t=now.toLocaleTimeString();
+  let t=now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit',second:'2-digit' });
   return t;
 }
 
@@ -247,9 +247,10 @@ const doBlueTick=async(A,x)=>{
 
   chats=chats['chats'];
   for(let i=(chats[A].length)-1;i>=0;i--){
-    if(chats[A][i].status<3){
+    if(chats[A][i].by===1&&chats[A][i].status<3){
       chats[A][i].status=3;
     }
+     else if(chats[A][i].by===2){}
    else break;
   }
   await User.updateOne({username:x},{$set:{chats:chats,isReloade:true}})
@@ -263,21 +264,13 @@ const doDoubleTick=async(A,x)=>{
   let chats=await User.findOne({username:x})
   chats=chats['chats'];
   for(let i=(chats[A].length)-1;i>=0;i--){
-    if(chats[A][i].status<2){
+    if(chats[A][i].by===1&&chats[A][i].status<2){
       chats[A][i].status=2;
     }
+    else if(chats[A][i].by===2){}
    else break;
   }
   await User.updateOne({username:x},{$set:{chats:chats,isReloade:true}})
 }
 
 
-
-const toFriend=()=>{
-
-
-
-
-
-  
-}
