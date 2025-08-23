@@ -61,9 +61,6 @@ updateChatChatList();
 },[isReloade,updateChatChatList])
 
 
-useEffect(()=>{
-  if(activeChat.name!==null&&nav_flag!=='A')setNavFlag('B');
-},[activeChat],nav_flag)
 
 
 
